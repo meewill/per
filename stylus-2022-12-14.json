@@ -1,0 +1,1465 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": true,
+      "openEditInWindow.popup": true,
+      "windowPosition": {
+        "height": 1165,
+        "left": 1120,
+        "top": 25,
+        "width": 1120
+      },
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": true,
+      "newStyleAsUsercss": true,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "u",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 2,
+      "editor.keyMap": "macSublime",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "end_with_newline": false,
+        "indent_char": " ",
+        "indent_conditional": true,
+        "indent_mozdoc": false,
+        "indent_size": 2,
+        "newline_after_open_brace": true,
+        "newline_before_close_brace": true,
+        "newline_before_open_brace": false,
+        "newline_between_properties": true,
+        "newline_between_rules": true,
+        "preserve_newlines": false,
+        "selector_separator_newline": true,
+        "translate_positions": [
+          {
+            "ch": 3,
+            "line": 29,
+            "sticky": "before",
+            "xRel": 432.578125
+          },
+          {
+            "ch": 2,
+            "line": 29,
+            "sticky": "before",
+            "xRel": 432.578125
+          }
+        ]
+      },
+      "editor.beautify.hotkey": "Shift-Ctrl-F",
+      "editor.lintDelay": 300,
+      "editor.linter": "stylelint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": true,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": true,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "rgb(253, 247, 227)",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "dropbox",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 254,
+      "headerWidth.install": 254,
+      "headerWidth.manage": 254,
+      "popupWidth": 246,
+      "updateInterval": 6
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1606460512830,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\t􀅓aidu\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n\n@-moz-document domain(\"wenku.baidu.com\")\n{\n\t$pas='https://cdn.jsdelivr.net/gh/kyle1an/SF-@main';\n\t\n\t// $fontname='/Pro/SF-Pro-Text-';\n\t$fontname='/Compact/SF-Compact-Text-';\n\t\n\t$fondname='/Compact/SF-Compact-Text-';\n\t\n\t$fononame='/Mono/SF-Mono-';\n\t\n\t$ext='.otf';\n\t\n\t$uR=U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;\n\t$u4=U+0000-024F, U+0250-02AF, U+02B0-052F, U+1D00-1DBF, U+1DC0-20CF, U+2100-218F, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;\n\t\n\t@font-face {\n\t    font-family: \"微軟正黑體\";\n\t    src: url($pas + $fontname + 'Regular' + $ext);\n\t    unicode-range: $u4;\n\t    font-weight: 400;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"微软雅黑\";\n\t    src: url($pas + $fontname + 'Light' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 300;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"微软雅黑\";\n\t    src: url($pas + $fontname + 'LightItalic' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 300;\n\t    font-style: italic;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"微软雅黑\";\n\t    src: url($pas + $fontname + 'Regular' + $ext);\n\t    unicode-range: $u4;\n\t    font-weight: 400;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"微软雅黑\";\n\t    src: url($pas + $fontname + 'RegularItalic' + $ext);\n\t    unicode-range: $u4;\n\t    font-weight: 400;\n\t    font-style: italic;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"微软雅黑\";\n\t    src: url($pas + $fontname + 'Bold' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 700;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"微软雅黑\";\n\t    src: url($pas + $fontname + 'BoldItalic' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 700;\n\t    font-style: italic;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"方正仿宋_gbk\";\n\t    src: url($pas + $fontname + 'Regular' + $ext);\n\t    unicode-range: $u4;\n\t    font-weight: 400;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"方正仿宋_gbk\";\n\t    src: url($pas + $fontname + 'RegularItalic' + $ext);\n\t    unicode-range: $u4;\n\t    font-weight: 400;\n\t    font-style: italic;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"方正仿宋_gbk\";\n\t    src: url($pas + $fontname + 'Bold' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 700;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"方正仿宋_gbk\";\n\t    src: url($pas + $fontname + 'BoldItalic' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 700;\n\t    font-style: italic;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"宋体\";\n\t    src: url($pas + $fontname + 'Regular' + $ext);\n\t    unicode-range: $u4;\n\t    font-weight: 400;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"宋体\";\n\t    src: url($pas + $fontname + 'RegularItalic' + $ext);\n\t    unicode-range: $u4;\n\t    font-weight: 400;\n\t    font-style: italic;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"宋体\";\n\t    src: url($pas + $fontname + 'Bold' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 700;\n\t}\n\t\n\t@font-face {\n\t    font-family: \"宋体\";\n\t    src: url($pas + $fontname + 'BoldItalic' + $ext);\n\t    unicode-range: $uR;\n\t    font-weight: 700;\n\t    font-style: italic;\n\t}\n}",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "􀅓aidu",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "􀅓aidu",
+    "updateDate": 1609752300574,
+    "_id": "b8768605-2ad9-46c2-8d16-5d194c6bc355",
+    "_rev": 1666143199403,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1630401359248,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\toa\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n\n@-moz-document domain(\"oa.tydic.com\")\n{\n\t.header {\n\t\topacity: 0.6;\n\t}\n\t\n\t#dicGuanHuai #card,\n\t#button,\n\t.logo+.header-left {\n\t\tdisplay: none;\n\t}\n\t\n\t.l-tab-links li {\n\t\twidth: 120px;\n\t}\n\t\n\t.l-tab-links li.l-selected a {\n\t\tfont-size: 13px;\n\t\tmargin-right: 0;\n\t}\n\t\n\t#dicDivgrid .l-grid,\n\ttable .l-grid-row-cell-inner {\n\t\tmargin-right: 0 !important;\n\t\twhite-space: nowrap !important;\n\t\ttext-overflow: clip !important;\n\t}\n\t\n\tli[tabid=\"home\"] {\n\t\tborder: 1px solid white !important;\n\t\tbackground: white !important;\n\t}\n\t\n\t.l-grid-row td:first-child {\n\t\tfont-variant: tabular-nums !important;\n\t}\n\t\n\t\n}",
+    "usercssData": {
+      "name": "oa",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "oa",
+    "updateDate": 1635841056407,
+    "_id": "b5c9f500-b0ba-4c42-9a80-a26ba2259ae6",
+    "_rev": 1666143199524,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1635487265067,
+    "name": "172.16.1.232",
+    "sections": [
+      {
+        "code": "* {\n \tfont-variant-numeric: tabular-nums !important;\n}\n\n[name$=\"].page_temp_struct_id\"] {\n    // width: 100px ;\n}\ntr[id|=\"tr_\"] td:first-child {\n    width: 400px;\n}\n\n.gridView td {\n    padding: 3px 0px;\n}\n\ninput[name$=\"].action_value\"] {\n    width: 100px;\n}\ninput[name$=\"].action_value\"] {\n\n    width: 250px;\n    font-family: SF Mono;\n    font-size: 12px;\n/*     font-weight:600; */\n}\n\ninput[name$=\"].property\"] {\n    width: 200px;\n    font-family: SF Mono;\n    font-size: 14px;\n    font-weight:600;\n}\ninput[name$=\"].tips\"] {\n    width: 40px;\n}\n\n\ninput[name$=\"].length\"] {\n    width: 40px;\n}\n\n\ninput[name$=\"].default_value\"] {\n    font-family: SF Mono;\n    font-size: 14px;\n}\n\ninput[name$=\"].is_display\"] {\n    width: 30px;\n}",
+        "urlPrefixes": [
+          "http://172.16.1.232:15368/ppm"
+        ]
+      }
+    ],
+    "updateDate": 1637805951090,
+    "_id": "59707336-a068-4bcd-a519-d732f89ff1a2",
+    "_rev": 1666143199542,
+    "id": 3
+  },
+  {
+    "enabled": false,
+    "installDate": 1629356362843,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\t127.0.0.1\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document domain(\"127.0.0.1\"),\ndomain(\"135.64.138.163\") {\n    body {\n        font-family: \"Microsoft YaHei\", Arial, Helvetica, sans-serif;\n    }\n    #assignStaffCode,\n    #deleteStaffCode,\n    #modStaffDate {\n        display: inline-block!important;\n    }\n    .w800 {\n        left: 40px;\n        position: absolute;\n    }\n    a.dg {\n        position: absolute;\n        top: 45px;\n        left: 0;\n    }\n\n    .more-qh {\n        position: relative;\n    }\n\n    .more-qh a[value=\"4\"] {\n        position: absolute;\n        left: 190px;\n        top: -80px;\n        color: red;\n    }\n\n    #menuPanelDiv.tab_bq {\n        padding-left: 400px !important;\n    }\n\n    a[latnid=\"891\"] {\n        position: absolute;\n        top: -40px;\n        height: 40px;\n        width: 95px;\n    }\n\n    a[latnid=\"891\"],\n    dt[latnid=\"891\"] {\n        color: red !important;\n    }\n\n    .indexSearch {\n        position: absolute;\n        left: 173px;\n        top: 46px;\n        z-index: 2;\n    }\n\n    a.icon-search img {\n        height: 100px;\n        width: 100px;\n        opacity: 0.03;\n    }\n\n    /* 确定 */\n    .layui-layer-btn0 {\n        height: 80px !important;\n        display: block !important;\n    }\n\n    /* 取消 */\n    .layui-layer-btn1 {\n        height: 50px !important;\n        display: block !important;\n    }\n\n    .qrychooseAddrDIV input[type=\"checkbox\"] {\n        height: 30px;\n        width: 30px;\n    }\n\n    [name=\"chooseAddrBtn\"] {\n        position: absolute;\n        height: 190px;\n    }\n\n    [name=\"selectNbr\"] {\n        width: 400px;\n    }\n\n    .chooseAddrDIV.tcc-bg a[name=\"confirmChooseAddr\"] {\n        position: absolute;\n        right: 100px;\n        top: 40px;\n        width: 60px;\n        height: 90px;\n    }\n}",
+    "usercssData": {
+      "name": "127.0.0.1",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "127.0.0.1",
+    "updateDate": 1646962906539,
+    "_id": "aa69c4d9-3e1f-4ece-9f2e-1a51f5d5a7b0",
+    "_rev": 1666143199585,
+    "customName": "127.0.0.1 电信门户",
+    "id": 4
+  },
+  {
+    "enabled": true,
+    "installDate": 1641537549254,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           136.96.63.25\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\tstylus\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"136.96.63.25\"), domain(\"127.0.0.1\"), domain(\"136.96.61.101\") {\n  /* Insert code here... */\n  [name=\"groupStoreDiv\"]{\n      display:none;\n  }\n}",
+    "usercssData": {
+      "name": "136.96.63.25",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "stylus",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "136.96.63.25",
+    "updateDate": 1667734694829,
+    "_id": "2895682f-a077-4d3f-8127-47719c0cbdbe",
+    "_rev": 1667734694829,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1648523564436,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           hackernoon.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"hackernoon.com\") {\n    /* Insert code here... */\n\theader {\n\t\tposition: relative !important;\n\t}\n}",
+    "usercssData": {
+      "name": "hackernoon.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "hackernoon.com",
+    "updateDate": 1649861622461,
+    "_id": "94d54315-eeff-438c-97cd-352f486ba6c5",
+    "_rev": 1666143200268,
+    "id": 6
+  },
+  {
+    "enabled": true,
+    "installDate": 1648647383232,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           reactjs.org \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n \n@-moz-document url-prefix(\"https://reactjs.org/\") {\n    header { \n        position: relative !important;\n    }\n    \n    header + div {\n        margin-top: 0 !important;\n    }\n}",
+    "usercssData": {
+      "name": "reactjs.org",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "reactjs.org",
+    "updateDate": 1648688784788,
+    "_id": "248a6206-914b-4ce2-b7c5-022d297761f1",
+    "_rev": 1666143200281,
+    "id": 7
+  },
+  {
+    "enabled": true,
+    "installDate": 1649230753314,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           tailwindcss.com \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\t  less\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"tailwindcss.com\") {\n/* Insert code here... */\nheader,\n.sticky.top-0.z-40.w-full {\n\tposition: relative !important;\n}\n\n.sr-only + svg {\n\t/*     display: none !important; */\n\topacity: 0.1 !important;\n}\n\n#header + div tr td {\n\tuser-select: all;\n}\n}\n\n@-moz-document domain(\"play.tailwindcss.com\") {\n/* Insert code here... */\nheader svg {\n\t/*     display: none !important; */\n\topacity: 0.1 !important;\n}\n}",
+    "usercssData": {
+      "name": "tailwindcss.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "less",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "tailwindcss.com",
+    "updateDate": 1667137507723,
+    "_id": "181e1065-d438-4a04-b136-0f1e4cb25658",
+    "_rev": 1667137507723,
+    "id": 8
+  },
+  {
+    "enabled": true,
+    "installDate": 1649406513790,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           help.dropbox.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"help.dropbox.com\") {\n  /* Insert code here... */\n  .u01-v2-help-header__logo {\n    opacity: 0.1;\n  }\n}",
+    "usercssData": {
+      "name": "help.dropbox.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "help.dropbox.com",
+    "updateDate": 1649406529727,
+    "_id": "7558a518-6819-40ab-8f5f-dcc331f692c1",
+    "_rev": 1666143200282,
+    "id": 9
+  },
+  {
+    "enabled": true,
+    "installDate": 1649668756767,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           w3schools.com \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"w3schools.com\") {\n  /* Insert code here... */\n  .topnav {\n    position: relative !important;\n  }\n  \n  #right .sidesection,\n  .codegameright {\n    display: none;\n  }\n  \n \n}",
+    "usercssData": {
+      "name": "w3schools.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "w3schools.com",
+    "updateDate": 1649726220301,
+    "_id": "904b3193-9e4d-4519-ad47-ba04548d316f",
+    "_rev": 1666143200282,
+    "id": 11
+  },
+  {
+    "enabled": true,
+    "installDate": 1649746090619,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           visualstudio.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"visualstudio.com\") {\n  /* Insert code here... */\n  .navbar-inverse {\n    position: relative;\n  }\n}",
+    "usercssData": {
+      "name": "visualstudio.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "visualstudio.com",
+    "updateDate": 1649861630992,
+    "_id": "fd696e02-0f96-465d-8a4a-a4d9bc43ebf0",
+    "_rev": 1666143200282,
+    "id": 12
+  },
+  {
+    "enabled": true,
+    "installDate": 1649818897186,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           jetbrains.com \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"jetbrains.com\") {\n  /* Insert code here... */\n  .jetbrains-cookies-banner,\n  .jetbrains-cookies-banner-2 {\n    display: none\n  }\n  \n  .notification__wrapper,\n  .app__header {\n    opacity: 0.2\n  }\n}",
+    "usercssData": {
+      "name": "jetbrains.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "jetbrains.com",
+    "updateDate": 1653729807450,
+    "_id": "7ac8c702-df6c-4aee-bf96-185062283aaf",
+    "_rev": 1666143200323,
+    "id": 13
+  },
+  {
+    "enabled": true,
+    "installDate": 1650105516238,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           netlify.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"app.netlify.com\") {\n  /* Insert code here... */\n  [data-line-number]:before {\n    font-family: XcodeDigits !important;\n  }\n}",
+    "usercssData": {
+      "name": "netlify.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "netlify.com",
+    "updateDate": 1666919396933,
+    "_id": "97e8a167-5228-4f02-9999-853230b9f7db",
+    "_rev": 1666919396933,
+    "id": 14
+  },
+  {
+    "enabled": true,
+    "installDate": 1651197350619,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           lexical.dev \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"lexical.dev\") {\n  /* Insert code here... */\n  .navbar__logo {\n    opacity: 0.3;\n  }\n}",
+    "usercssData": {
+      "name": "lexical.dev",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "lexical.dev",
+    "updateDate": 1651197357613,
+    "_id": "06fc334b-21fc-49d7-85cb-5b7574e3bb14",
+    "_rev": 1666143200324,
+    "id": 15
+  },
+  {
+    "enabled": true,
+    "installDate": 1651715409343,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           immerjs.github.io \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"immerjs.github.io\") {\n  /* Insert code here... */\n  .navbar--fixed-top {\n    position: relative;\n  }\n}",
+    "usercssData": {
+      "name": "immerjs.github.io",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "immerjs.github.io",
+    "updateDate": 1666919415395,
+    "_id": "f0096ff4-9b67-4d13-b566-673c36dcd0ad",
+    "_rev": 1666919415395,
+    "id": 16
+  },
+  {
+    "enabled": true,
+    "installDate": 1652684306474,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           element-plus.org\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"element-plus.org\") {\n  /* Insert code here... */\n  .sponsor-item,\n  .sponsors,\n  .sponsors-button,\n  .sponsor-container {\n    display: none;\n  }\n  .logo {\n    opacity: 0.2\n  }\n}",
+    "usercssData": {
+      "name": "element-plus.org",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "element-plus.org",
+    "updateDate": 1654778387178,
+    "_id": "77abe0fb-f933-49d3-a10a-16ca242a36a6",
+    "_rev": 1666143200325,
+    "id": 17
+  },
+  {
+    "enabled": true,
+    "installDate": 1654590563020,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           jsben.ch \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"jsben.ch\") {\n  /* Insert code here... */\n  [href^=\"https://click.a-ads.com\"]{\n    display: none;\n  }\n}",
+    "usercssData": {
+      "name": "jsben.ch",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "jsben.ch",
+    "updateDate": 1666919410222,
+    "_id": "9e9ef409-7c74-4a0d-a02d-d9194f35d1ae",
+    "_rev": 1666919410222,
+    "id": 18
+  },
+  {
+    "enabled": true,
+    "installDate": 1655108778763,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           element.eleme.io \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"element.eleme.io\") {\n  /* Insert code here... */\n  .nav-logo {\n    opacity: 0.2\n  }\n}",
+    "usercssData": {
+      "name": "element.eleme.io",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "element.eleme.io",
+    "updateDate": 1655108778763,
+    "_id": "0196ab21-1b7a-4ad5-a475-cbc3568fdb06",
+    "_rev": 1666143200329,
+    "id": 19
+  },
+  {
+    "enabled": true,
+    "installDate": 1631791520012,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           codesandbox\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\tstylus\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"codesandbox.io\") {\n\t/* Insert code here... */\n\t.monaco-editor {\n\t\tfont-family: SF Mono;\n\t}\n}",
+    "usercssData": {
+      "name": "codesandbox",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "stylus",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "codesandbox",
+    "updateDate": 1631791561916,
+    "_id": "bee8746c-c5f2-4e2c-aec0-4e0d085ae041",
+    "_rev": 1666143199521,
+    "id": 20
+  },
+  {
+    "enabled": true,
+    "installDate": 1615194352877,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tlogone\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document domain(\"messiahhh.github.io\") {\n\t.site-name {\n\t\topacity: 0\n\t}\n}\n\n@-moz-document domain(\"sspai.com\") {\n\t.logo-sspai.logo-sspai {\n\t\topacity: 0.04\n\t}\n}\n\n@-moz-document domain(\"thepiratebay.org\") {\n\timg[alt=\"The Pirate Bay\"] {\n\t\topacity: 0\n\t}\n}\n\n@-moz-document domain(\"quora.com\") {\n\t.logo_fill {\n\t\topacity: 0;\n\t}\n}",
+    "usercssData": {
+      "name": "logone",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "logone",
+    "updateDate": 1651114754682,
+    "_id": "2b73dfa6-73e1-4647-9cc7-c011543a1996",
+    "_rev": 1666143199621,
+    "id": 21
+  },
+  {
+    "enabled": true,
+    "installDate": 1657261483415,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           eslint.org \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\tless\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"eslint.org\") {\n  /* Insert code here... */\n   .highlight-line:before {\n    font-family: XcodeDigits !important;\n   }\n}",
+    "usercssData": {
+      "name": "eslint.org",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "less",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "eslint.org",
+    "updateDate": 1666919430111,
+    "_id": "549e9bcc-3927-40c9-871b-0a653c7e17c3",
+    "_rev": 1666919430111,
+    "id": 22
+  },
+  {
+    "enabled": true,
+    "installDate": 1660528401256,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           date-fns.org \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"date-fns.org\") {\n  /* Insert code here... */\n\t._3d0QX2D45PrIfcI4FIeCXa {\n\t\tdisplay:none;\n\t}\n}",
+    "usercssData": {
+      "name": "date-fns.org",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "date-fns.org",
+    "updateDate": 1666919421172,
+    "_id": "43f06380-847c-488b-8d8e-c6c3a571d4d1",
+    "_rev": 1666919421172,
+    "id": 24
+  },
+  {
+    "enabled": true,
+    "installDate": 1663572628215,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           leetcode.cn\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"leetcode.cn\") {\n/* Insert code here... */\n[alt=\"logo\"] {\n  opacity: 0.1\n}\n\n[class*='HeaderCn'] {\n  opacity: 0.3\n}\n\n\n}",
+    "usercssData": {
+      "name": "leetcode.cn",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "leetcode.cn",
+    "updateDate": 1663572702258,
+    "_id": "c6dc7595-3bc1-4492-b94d-00b50bbb5402",
+    "_rev": 1666143200862,
+    "id": 25
+  },
+  {
+    "enabled": true,
+    "installDate": 1664009849752,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\t-fontsDev\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document regexp('(https?|chrome-extension):\\\\/\\\\/(localhost|127.0.0.1|172.16.1.213).*') {\n.load(@textFamilies, @tarSF, @allWeights, @generalUnicode, false);\n.load(@boldFamilies, @tarSF, @boldWeights, @generalUnicode, false);\n.load(@monoFamilies, @tarMo, @usualWeights, @allUnicode);\n.load(@compactFamilies, @tarCM, @allWeights, @generalUnicode);\n.load-local(@zhFamilies, @tarCM, @allWeights, @zhUnicode, @styles);\n@font-face {\n\tfont-family: 'XcodeDigits';\n\tsrc: local('Xcode Digits Regular'), url(\"https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/XcodeDigits-regular.ttf\");\n\tunicode-range: U+0030-0039;\n\tfont-weight: 400;\n\tfont-style: normal;\n\tfont-display: swap;\n}\n\n@zhFamilies: '宋体',\n'Microsoft Yahei';\n@textFamilies: 'SF Pro Text',\n'宋体',\nArial,\n'Helvetica Neue',\n'SF Pro Display',\n'PingFang SC',\n'Microsoft Yahei';\n@boldFamilies: 'Arial Black',\nHelveticaNowDisplay-XBd;\n@compactFamilies: 'SF Compact Text',\nMulish;\n@monoFamilies: 'SF Mono',\n'SFMono-Regular',\nUbuntu Mono;\n@repo: 'https://cdn.jsdelivr.net/gh/meewill/SF@main';\n@styles: {\n\tnormal: '';\n\titalic: 'Italic';\n}\n\n@thinWeights: {\n\tThin: 200;\n}\n\n@usualWeights: {\n\tLight: 300;\n\tRegular: 400;\n\tMedium: 500;\n\tSemibold: 600;\n\tBold: 700;\n}\n\n@boldWeights: {\n\tSemibold: 600;\n\tBold: 700;\n}\n\n@allWeights: {\n\tThin: 200;\n\tLight: 300;\n\tRegular: 400;\n\tMedium: 500;\n\tSemibold: 600;\n\tBold: 700\n}\n\n@tarSF: {\n\tnam: 'SF Pro Text';\n\tdir: '/Fonts/SF-Pro-Text-';\n\text: 'woff2';\n}\n\n@tarMo: {\n\tnam: 'SF Mono';\n\tdir: '/Fonts/SF-Mono-';\n\text: 'woff2';\n}\n\n@tarCM: {\n\tnam: 'SF Compact Text';\n\tdir: '/Fonts/SF-Compact-Text-';\n\text: 'woff2';\n}\n\n@formats: {\n\t@ttf: TrueType;\n\t@otf: OpenType;\n\t@woff: woff;\n\t@woff2: woff2;\n}\n\n.load(@families,\n@tar,\n@weights,\n@unicode,\n@local: true) {\n\teach(@families,\n\t.(@family, @k1, @i1) {\n\t\teach(@weights, .(@numeric, @weight-key, @i) {\n\t\t\teach(@styles, .(@style-val, @style, @i2) {\n\t\t\t\t// @keyword: extract(@weight, 1);\n\t\t\t\t// @numeric: extract(@weight, 2);\n\t\t\t\t@font-face {\n\t\t\t\t\tfont-family: @family;\n\t\t\t\t\t.src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local);\n\t\t\t\t\tunicode-range: @unicode;\n\t\t\t\t\tfont-weight: @numeric;\n\t\t\t\t\tfont-style: @style;\n\t\t\t\t\tfont-display: swap;\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t)\n\t\t}\n\n\t\t)\n\t}\n\n\t)\n}\n\n.src(@family,\n@tar,\n@repo,\n@weight-key,\n@style-val,\n@numeric,\n@style,\n@local) {\n\t@nam: @tar[nam];\n\t@dir: @tar[dir];\n\t@ext: @tar[ext];\n\t@format: @formats[@@ext];\n\t@italic: if(@style-val='',\n\te(''),\n\t' Italic');\n\tsrc: if(@local,\n\tlocal('@{nam} @{weight-key}@{italic}') e(','),\n\t) url('@{repo}@{dir}@{weight-key}@{style-val}.@{ext}') format('@{format}');\n}\n\n.load-local(@families,\n@tar,\n@weights,\n@unicode,\n@styles,\n@local: true) {\n\teach(@families,\n\t.(@family,\n\t@k1,\n\t@i1) {\n\t\t@font-face {\n\t\t\tfont-family: @family;\n\t\t\tsrc: local(@family);\n\t\t\tunicode-range: @unicode;\n\t\t\tfont-display: swap;\n\t\t}\n\t}\n\n\t)\n}\n\n@generalUnicode: e('U+0000-024F'),\ne('U+02B0-052F'),\ne('U+1DC0-20CF'),\ne('U+2190-22FF'),\ne('U+2460-24FF'),\ne('U+25A0-25FF'),\ne('U+2700-27FF'),\ne('U+2900-2BFF'),\ne('U+2C60-2C7F'),\ne('U+2DE0-2E7F'),\ne('U+3200-32FF'),\ne('U+A640-A69F'),\ne('U+A700-A7FF'),\ne('U+E000-F8FF'),\ne('U+FFF0-FFFF'),\ne('U+F0000-10FFFF');\n@plusUnicode: e('U+0250-02AF'),\ne('U+1D00-1DBF'),\ne('U+2190-22FF');\n@allUnicode: @generalUnicode,\n@plusUnicode;\n@zhUnicode: e('U+4E00-9FFF'),\ne('U+3400-4DBF'),\ne('U+20000-2A6DF'),\ne('U+F900-FAFF'),\ne('U+2F800-2FA1F'); // e('U+2A700–2B73F, U+2B740–2B81F, U+2B820–2CEAF'),\n\n}",
+    "usercssData": {
+      "name": "-fontsDev",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "-fontsDev",
+    "updateDate": 1668343632871,
+    "_id": "c94e4ec7-bb46-4b9e-bf0b-f455335f73f1",
+    "_rev": 1668343632871,
+    "customName": "-fonts-dev",
+    "id": 26
+  },
+  {
+    "enabled": true,
+    "installDate": 1664462492887,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           douyin.com \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"douyin.com\") {\n  /* Insert code here... */\n/* \t.screen-mask.login-mask-enter-done, */\n\t.recommend-comment-login.recommend-comment-login-mask {\n\t\tdisplay: none;\n\t}\n}",
+    "usercssData": {
+      "name": "douyin.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "douyin.com",
+    "updateDate": 1666919425132,
+    "_id": "bfaa73f4-0d0b-4a15-9f82-24a7ff8b1d0c",
+    "_rev": 1666919425132,
+    "id": 27
+  },
+  {
+    "enabled": false,
+    "installDate": 1606141573381,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\t-fonts\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n\n@-moz-document regexp('^((?!localhost|172.16.1.213|136.96.63.25|127.0.0.1|172.16.1.230).)*') { \n\nrepo = {\n  '0': 'https://raw.githubusercontent.com/kyle1an/SF-1/main',\n  '1': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main',\n  '2': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master',\n};\n$link = repo['2'];\n// @formatter:off\n$generalUnicode = U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;\n$plusUnicode = U+0250-02AF, U+1D00-1DBF, U+2190-22FF;\n// @formatter:on\n$monoUnicode = $generalUnicode, $plusUnicode;\n$textFamilies = 'SF Pro Text', 'SF Pro Display', Akzidenz, AlibabaPuHuiTi, 'Arial', arial, 'Arial Unicode MS', Arimo, Avenir, 'Benton Sans', 'Crisp Noto Sans Regular', Content-font, CustomSansSerif, 'dosis', font-regular, Geneva, gitbook-content-font, Helvetica, 'Helvetica Neue', HelveticaNeue, HelveticaNowDisplay-Regular, 'Helvetica Neue For Number', 'HelveticaNeue-Medium', 'HelveticaNeue-Bold', Hind, Inter, 'Lantinghei SC', lato, 'Lucida Grande', muli, mwf-segoeui-web, Noto, 'Noto Sans', 'Noto Sans SC', 'Noto Sans TC', 'Open Sans', opensans, 'PingFang SC', '.PingFang SC', 'PingFangSC', 'PingFang SC Light', 'PingFangSC-Light', 'PingFangSC-Regular', 'PingFangSC-Medium', 'PingFangSC-Semibold', 'pt sans', Roboto, Roboto-Light, Roboto-Regular, Roboto-Medium, sans-serif, 'Segoe UI Web (West European)', 'Segoe UI', SegoeUI, '-apple-system', 'Source Han Sans CN', 'source sans pro', system-ui, Tahoma, 'Times New Roman', 'Trebuchet MS', 'Ubuntu Light', Ubuntu, Verdana, 'wf_segoe-ui', Whitney, '方正仿宋_gbk', '宋体', '微軟正黑體', '微软雅黑', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft Yahei';\n// /* ──────── Fira Mono, IBM Plex Mono ui-monospace */\n$monoFamilies = 'SF Mono', 'SFMono-Regular', 'Cascadia Mono-SemiLight', Consolas, Courier, 'courier new', 'DejaVu Sans Mono', docs-Consolas, gitbook-code-font, Menlo, Meslo, Monaco, Monospace, monospaced, 'Roboto Mono', 'Source Code Pro', 'source-code-pro', 'SourceCodePro', 'PT Mono', Ubuntu Mono;\n$boldFamilies = 'Arial Black', HelveticaNowDisplay-XBd;\n$compactFamilies = 'SF Compact Text', Mulish;\n$boldWeights = { Semibold: 600, Bold: 700 };\n$usualWeights = merge({ Light: 300, Regular: 400, Medium: 500 }, $boldWeights);\n$allWeights = merge({ Thin: 200 }, $usualWeights);\n$textFonts = {\n  families: $textFamilies,\n  weight: $allWeights,\n  unicode: $generalUnicode,\n  dir: '/Fonts/SF-Pro-Text-',\n  src: @(dir, weight, style) {\n    /* local('SF Pro Text '+ weight + (style == 'Italic'? ' Italic':''))  \\, */\n    src_url(dir, weight, style);\n  }\n};\n$monoFonts = {\n  families: $monoFamilies,\n  weight: $usualWeights,\n  unicode: $monoUnicode,\n  dir: '/Fonts/SF-Mono-',\n  src: @(dir, weight, style) {\n    $fStyle = style == 'italic' ? ' Italic' : '';\n    local('SF Mono ' + weight + $fStyle) \\, src_url(dir, weight, style);\n  }\n};\n$boldFonts = {\n  families: $boldFamilies,\n  weight: $boldWeights,\n  unicode: $generalUnicode,\n  dir: '/Fonts/SF-Pro-Text-',\n  src: @(dir, weight, style) {\n    src_url(dir, 'Bold', style);\n  }\n};\n$compactFonts = {\n  families: $compactFamilies,\n  weight: $allWeights,\n  unicode: $generalUnicode,\n  dir: '/Fonts/SF-Compact-Text-',\n  src: @(dir, weight, style) {\n    fStyle = style == 'italic' ? ' Italic' : '';\n    local('SF Compact Text ' + weight + fStyle) \\, src_url(dir, weight, style);\n  }\n};\n\nloadFonts(f) {\n  srcFn = f.src;\n\n  for familiy in f[families] {\n    for weightName, weightNum in f[weight] {\n      for style in normal italic {\n        @font-face {\n          font-family: familiy;\n          src: srcFn(f[dir], weightName, style);\n          unicode-range: f[unicode];\n          font-weight: weightNum;\n          font-style: style;\n          font-display: swap;\n        }\n      }\n    }\n  }\n}\n\nsrc_url(dir, weight, style, ext = 'otf', format = 'OpenType') {\n  i = style == 'italic' ? 'Italic' : '';\n  url($link + dir + weight + i + '.' + ext) format(format);\n}\n\nloadFonts($textFonts);\nloadFonts($boldFonts);\nloadFonts($monoFonts);\nloadFonts($compactFonts);\n$zhUnicode = U+4E00-9FFF, U+3400-4DBF, U+20000-2A6DF, U+F900-FAFF, U+2F800-2FA1F;\n// U+2A700–2B73F, U+2B740–2B81F, U+2B820–2CEAF,\n$zhFamilies = '宋体', '微軟正黑體', '微软雅黑', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft Yahei';\nzh_f = { families: $zhFamilies, weight: $allWeights, unicode: $zhUnicode, dir: '/Fonts/SF-Pro-Text-' };\n\nfor font-name in zh_f[families] {\n  @font-face {\n    font-family: font-name;\n    src: local(font-name);\n    unicode-range: zh_f[unicode];\n    font-display: swap;\n  }\n}\n\n@font-face {\n  font-family: 'XcodeDigits';\n  src: local('Xcode Digits Regular'), url('https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master/Fonts/XcodeDigits-regular.ttf');\n  unicode-range: @css { U+0030-0039 };\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n}\n\n// * {\n\t// -moz-font-feature-settings: \"smcp\";\n\t// -webkit-font-feature-settings: \"tnum\"  !important;\n// \tfont-feature-settings: 'cv01', 'ss01'0, 'ss02', 'cv02'0, 'cv03', 'cv05', 'cv06'0, 'ss07'0, 'cv07'0, 'cv08', 'trad'0, 'nlck', 'nalt'0, 'ital', 'ss03'0, 'ss04';\n// }\n\n// \"cv01\",  \"Straight-sided nine\"; 6 9. [six six.tnum] by [six.1 six.1.tnum];\n// \"ss01\",  sub [six nine six.tnum nine.tnum] by [six.1 nine.1 six.1.tnum nine.1.tnum];\n// \"ss02\",  \"Open four\"; 4\n// \"cv02\",\n// \"cv03\",  \"Vertically centered colon\"; : and J\n// \"cv05\",  \"Seriffed Capital I\";\n// \"cv06\",  \"Tailed lowercase l\";\n// \"ss07\",  \"One storey a\";\n// \"cv07\",\n// \"cv08\",  \"Slashed zero\"; 0 and Chinese\n// \"trad\",\n// \"nlck\",\n// \"nalt\",\n// \"ital\",\n// \"tnum\",\n// \"ss03\",  -- Mono \"Alternate 0 no slash\";\n// \"ss04\";   \"Alternate 1 no serif\";;\n// // font-feature-settings: \"ss03\" !important;\n// // font-feature-settings: \"dnom\" !important;\n\n/*\nfeature cv01 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"6\";\n    }\n    SampleTextNameID{\n      name \"Straight-sided nine\";\n    };\n  };\n  sub [six six.tnum] by [six.1 six.1.tnum];\n\n} cv01;\n\n\nfeature cv02 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"9\";\n    };\n    SampleTextNameID{\n      name \"Open four\";\n    };\n  };\n  sub [nine nine.tnum] by [nine.1 nine.1.tnum];\n\n} cv02;\n\nfeature cv03 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"4\";\n    };\n    SampleTextNameID{\n      name \"Vertically centered colon\";\n    };\n  };\n  sub [four four.tnum] by [four.1 four.1.tnum];\n\n} cv03;\n\n\nfeature cv04 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"Open four\";\n    };\n    SampleTextNameID{\n      name \"Vertically centered colon\";\n    };\n  };\n  lookup calt_case_cv04_ss03;\n\n} cv04;\n\n\nfeature cv05 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"9:41\";\n    };\n    SampleTextNameID{\n      name \"Seriffed Capital I\";\n    };\n  };\n  sub @cv05 by @cv052;\n\n} cv05;\n\n\nfeature cv06 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"I\";\n    };\n    SampleTextNameID{\n      name \"Tailed lowercase l\";\n    };\n  };\n  sub @cv06 by @cv062;\n\n} cv06;\n\n\nfeature cv07 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"l\";\n    };\n    SampleTextNameID{\n      name \"One storey a\";\n    };\n  };\n  sub @cv07_ss07 by @cv07_ss072;\n\n} cv07;\n\n\nfeature cv08 {\n# GSUB\n# Lookups: 1\n\n  cvParameters{\n    FeatUILabelNameID{\n      name \"a\";\n    };\n    SampleTextNameID{\n      name \"Slashed zero\";\n    };\n  };\n  sub [zero zero.tnum zero.dnum zero.numr] by [zero.1 zero.1.tnum zero.1.dnum zero.1.numr];\n  sub [uni2080 uni2070 zero.sc] by [zero.1.subs zero.1.sups zero.1.sc];\n\n} cv08;\n\n\nfeature cv09 {\n# GSUB\n# Lookups: 1\n\n  sub [dollar cent] by [dollar.1 cent.1];\n\n} cv09;\n\n\nfeature cv10 {\n# GSUB\n# Lookups: 1\n\n  sub [dollar dollar.1] by [dollar.3 dollar.2];\n\n} cv10;\n\n*/\n\n",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "-fonts",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "-fonts",
+    "updateDate": 1652837407207,
+    "_id": "8b049fba-5312-4e5a-bf12-f85dc0ce767d",
+    "_rev": 1670734281432,
+    "id": 28
+  },
+  {
+    "enabled": true,
+    "installDate": 1663491386605,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           bbs.diaozong.cn \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"bbs.diaozong.cn\") {\n/* Insert code here... */\n.mask_div {\n\tdisplay: none !important;\n}\n\n.fixed-table-pagination {\n\tposition: fixed;\n\tbottom: 0;\n}\n\n.select-table {\n\tpadding-bottom: 60px;\n}\n\n\n}\n\n\n@-moz-document url-prefix(\"https://bbs.diaozong.cn/p.html\") {\n/* Insert code here... */\n.fixed-table-pagination {\n\tposition: absolute;\n\tbottom: 0;\n}\n\n}",
+    "usercssData": {
+      "name": "bbs.diaozong.cn",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "bbs.diaozong.cn",
+    "updateDate": 1666919434987,
+    "_id": "4ea7df1f-224b-44e4-92cb-e9329caccbde",
+    "_rev": 1666919434987,
+    "id": 29
+  },
+  {
+    "enabled": true,
+    "installDate": 1644909755181,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           www.javatpoint.com \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"www.javatpoint.com\") {\n    /* Insert code here... */\n\t#link{\n\t\tposition: absolute\n\t}\n}",
+    "usercssData": {
+      "name": "www.javatpoint.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "www.javatpoint.com",
+    "updateDate": 1664864648650,
+    "_id": "ebd8a48d-8a5f-4c82-9b69-287bc46550f9",
+    "_rev": 1666143199542,
+    "customName": "javatpoint.com",
+    "id": 30
+  },
+  {
+    "enabled": true,
+    "installDate": 1664864266310,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "customName": "juejin 掘金",
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tjuejin 掘金\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document domain(\"juejin.im\"),\ndomain(\"juejin.cn\") {\n[title=\"建议反馈\"],\n// .sidebar-bd-entry,\n// .index-book-collect,\n// .nav-item.link-item.book,\n// .nav-item.add,\n// .collect-btn.panel-btn,\n// .share-title,\n// .weibo-btn.share-btn.panel-btn,\n// .qq-btn.share-btn.panel-btn,\nli.item:has([data-book-id]),\n.panel-btn:has(.icon-report),\n.wechat-btn.share-btn.panel-btn,\n.wrap.category-course-recommend,\n.guide-collect-popover,\n.extension-banner,\n.recommend-box {\n\tdisplay: none !important;\n}\n\n.sidebar-block.app-download-sidebar-block,\nul.sidebar-bd-entry > li > a[target=\"_blank\"],\n.nav-item.link-item.book,\n.nav-item.link-item:has([href=\"/live\"]),\n.nav-item.link-item.download-icon,\n.nav-item.link-item.extension-icon,\n.nav-item.link-item:has(.special-activity),\n.nav-item.add.creator-item {\n\tdisplay: none !important;\n}\n\n// .nav-item.auth,\n.nav-item.vip-entry {\n\tvisibility: hidden;\n}\nbody {\n\t--juejin-navigation: #f4f5f5;\n}\n.comment-form, // .app-link,\n.container.hot-list {\n\tdisplay: none !important;\n}\n\n.main-header.main-header.visible,\n.main-header[data-v-20709686] {\n\tbackground-color: #f4f5f5;\n\tborder-bottom: 0px solid #f4f5f5;\n}\n\n\n.view-nav,\n.view-nav:before {\n\tleft: 0;\n\tbackground-color: #f4f5f5;\n}\n\n\n\n.main-header-box {\n\t.main-header.main-header.unauthorized.visible {\n\t\t// position: absolute !important;\n\t}\n}\n\n.main-header[data-v-6a3e47cf] {\n\t// position: fixed;\n\t// top: 0;\n\t// left: 0;\n\t// right: 0;\n\t// transition: all 0s;\n\t// transform: translate3d(0, -100%, 0);\n}\n.sticky-block-box {\n\t// top: 1.767rem !important;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n}",
+    "usercssData": {
+      "name": "juejin 掘金",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "juejin 掘金",
+    "updateDate": 1665028042341,
+    "_id": "6054fe19-bd72-4ff6-9137-5b0185b46099",
+    "_rev": 1666143200916,
+    "id": 31
+  },
+  {
+    "enabled": true,
+    "installDate": 1609752375488,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tzhihu\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document domain(\"www.zhihu.com\") {\n#root > div > div[class^=css] {\n  display: none;\n}\n\n[class='ContentItem-actions Sticky RichContent-actions is-bottom'] {\n  padding-top: 0 !important;\n  padding-bottom: 0 !important\n}\n\n[class='ContentItem-actions'] {\n  padding-top: 0 !important;\n  padding-bottom: 0 !important\n}\n\n.RichContent--unescapable.is-collapsed .ContentItem-rightButton {\n  bottom: 50px !important;\n}\n\n.List-item + .List-item:after {\n  left: calc(-1 * var(--divi) + 10px) !important;\n  width: calc(100% + var(--divi) - 45px) !important;\n}\n\n:root {\n  --btn_l: -77px;\n  --cmt_l: 30px + 20px;\n  --btn_b: 300px;\n  --arrow_top: 35px;\n}\n\n.Question-main {\n  position: relative;\n}\n\n.Question-mainColumn:before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: -50000px;\n  bottom: 0;\n  left: -43px - 24px;\n  width: 1px;\n  border-radius: 8px;\n  background-color: #d6d9dc;\n}\n\n[class=\"ContentItem-actions\"] {\n  > span:nth-child(1) {\n    position: absolute;\n    bottom: 7.7vh !important;\n  }\n}\n\n.ContentItem-actions {\n  background: #fff !important;\n  padding-bottom: 17px;\n  .Button.VoteButton {\n    color: #bbc0c4;\n  }\n\n  .Button.VoteButton.VoteButton {\n    background-color: rgba(255, 255, 255, 0.8);\n    &:not(:disabled):hover {\n      background-color: white;\n    }\n  }\n\n  > span:nth-child(1) {\n    bottom: 10vh;\n    .Button.VoteButton.VoteButton--up,\n    .Button.VoteButton.VoteButton--down {\n      background-color: rgba(0, 0, 0, 0) !important;\n    }\n\n    .Button.VoteButton.VoteButton--up::before,\n    .Button.VoteButton.VoteButton--down:after {\n      position: relative;\n      bottom: -2px;\n      font-size: 20px;\n      font-family: \"SF Pro Text\" !important;\n      color: #bbc0c4;\n    }\n\n    .Button.VoteButton.VoteButton--up {\n      padding-left: 0 !important;\n      color: #6a737c !important;\n      &::before {\n        content: \"􀃿\" !important;\n      }\n\n      span:nth-child(1) {\n        color: #bbc0c4 !important;\n      }\n    }\n\n    .Button.VoteButton.VoteButton--down {\n      margin-left: 0;\n      &:after {\n        content: \"􀄁\" !important;\n      }\n    }\n  }\n\n  .Button.Button--blue {\n    border-width: 0;\n  }\n\n  .Button.SearchBar-askButton.Button--primary.Button--blue {\n    color: #b6b6b6;\n    border-color: white;\n    background-color: white;\n  }\n\n  .Button.FollowButton.Button--primary.Button--blue {\n    margin: 0;\n    padding: 0;\n    border-color: white;\n    color: #848484;\n    background-color: white;\n  }\n\n  .Button.Button--grey.Button--withIcon.Button--withLabel {\n    margin-left: 0;\n    padding-left: 0;\n    border-color: white;\n    color: #848484;\n  }\n\n  > button:nth-child(2),\n  > button:nth-child(3) {\n    margin-left: 0 !important;\n    position: absolute;\n    right: calc(var(--btn_l) + var(--cmt_l));\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 50px;\n  }\n\n  > button:nth-child(2) {\n    justify-content: center;\n    height: 70px;\n    span {\n      flex-grow: 1;\n      svg {\n        color: #bbc0c4;\n        position: relative;\n        top: 13px;\n      }\n    }\n  }\n\n  > button:nth-child(3) {\n    justify-content: top;\n    height: 150px;\n    z-index: -1;\n    svg {\n      margin: 0 !important;\n    }\n  }\n\n  > button:nth-child(4),\n  > div:nth-child(6),\n  .Popover.ShareMenu {\n    display: none;\n  }\n\n  > button:nth-child(5),\n  .Popover.ShareMenu Button {\n    visibility: hidden;\n  }\n}\n\n.Card.SearchResult-Card {\n  .TimeBox {\n    [class=\"ContentItem-actions\"],\n    [class=\"ContentItem-actions RichContent-actions\"],\n    [class=\"ContentItem-actions Sticky RichContent-actions is-bottom\"] {\n      > button:nth-child(2),\n      > button:nth-child(3) {\n        left: calc(var(--btn_l) + var(--cmt_l) - 20px);\n      }\n    }\n  }\n}\n\n.grid-date,\n[class^=\"time\"],\n[class$=\"time\"],\n[id^=\"timer\"] {\n  font-variant-numeric: tabular-nums !important;\n  margin-left: 0 !important;\n}\n\n.ContentItem-actions {\n  > span:nth-child(1) {\n    position: relative;\n    width: 70px !important;\n    left: calc(var(--btn_l));\n    text-align: center;\n    color: #6a737c;\n    .Button.VoteButton.VoteButton--up,\n    .Button.VoteButton.VoteButton--down {\n      padding: 0 !important;\n    }\n\n    .Button.VoteButton.VoteButton--up {\n      font-size: 21px;\n    }\n\n    .Button.VoteButton.VoteButton--up::before,\n    .Button.VoteButton.VoteButton--down:after {\n      position: absolute;\n      left: calc(-18px + 50%);\n    }\n\n    .Button.VoteButton.VoteButton--up::before {\n      content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='rgb(187, 192, 196)' stroke='none'><path d='M2 26h32L18 10 2 26z'></path></svg>\") !important;\n      top: calc(-1 * var(--arrow_top) - 3px);\n    }\n\n    .Button.VoteButton.VoteButton--down:after {\n      content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='rgb(187, 192, 196)' stroke='none'><path d='M2 10h32L18 26 2 10z'></path></svg>\") !important;\n      top: var(--arrow_top);\n      /*transform: rotate(180deg);*/\n    }\n  }\n}\n\n.ContentItem-actions.Sticky.RichContent-actions.is-fixed.is-bottom {\n  -webkit-backdrop-filter: none;\n  background-color: rgba(0, 0, 0, 0) !important;\n  > span:nth-child(1) {\n    bottom: 34vh;\n  }\n\n  > button:nth-child(2) {\n    height: 40px;\n    padding-bottom: 1px;\n    span {\n      svg {\n        position: relative;\n        top: 0;\n      }\n    }\n  }\n}\n\n.ContentItem-actions.Sticky.RichContent-actions.is-bottom {\n  height: 42px;\n}\n\n.AuthorInfo-content,\n.RichContent.is-collapsed {\n  overflow: visible !important;\n}\n\n.Zi.Zi--Share.Button-zi,\n.Zi.Zi--Star.Button-zi {\n  visibility: visible;\n  color: #bbc0c4;\n}\n\n.Zi.Zi--ArrowDown.ContentItem-arrowIcon.is-active {\n  width: 40px;\n  height: 40px;\n  position: relative;\n  right: calc(var(--btn_l) + var(--cmt_l) - 15.5px);\n  bottom: 40px;\n}\n\n.Zi.Zi--Like,\n.Zi.Zi--TriangleUp.VoteButton-TriangleUp,\n.Zi.Zi--TriangleDown {\n  display: none;\n}\n\n.CommentItemV2-talkBtn .Zi.Zi--Comments {\n  opacity: 0.3;\n  position: absolute;\n}\n\n.Zi.Zi--Comment.Button-zi {\n  margin-right: 0;\n}\n\n:root {\n  --p_t: 0px;\n  --arrow_top: 35px;\n}\n\nimg.Avatar.AuthorInfo-avatar {\n  width: 32px;\n  height: 32px;\n}\n\n.ContentItem-time {\n  font-size: 12px;\n}\n\n.AuthorInfo-content {\n  height: 32px !important;\n  .UserLink-link {\n    color: #0077cc;\n    font-size: 13px;\n    font-weight: 400;\n    position: relative;\n    &:hover {\n      color: #0095ff;\n    }\n  }\n\n  .ztext.AuthorInfo-badgeText {\n    font-size: 13px;\n    position: relative;\n  }\n}\n\n.Card.SearchResult-Card {\n  .ContentItem-time {\n    position: absolute !important;\n    top: 28px;\n  }\n}\n\n#QuestionAnswers-answers {\n  .AuthorInfo-head {\n    position: relative;\n    .UserLink.AuthorInfo-name {\n      font-size: 13px !important;\n    }\n  }\n}\n\n.Topstory {\n  background-color: white;\n}\n\n.Card.SearchResult-Card,\n.Topstory {\n  .AuthorInfo-content {\n    .AuthorInfo-head .UserLink.AuthorInfo-name .UserLink-link,\n    .Popover + a {\n      position: relative;\n      top: -9px;\n      font-size: 13px;\n    }\n  }\n\n  .ztext.AuthorInfo-badgeText {\n    padding-top: 19px;\n    position: absolute;\n    left: 55px !important;\n  }\n}\n\n.MinorHotSpot .SearchItem-meta.SearchItem-authorInfo {\n  .ztext.AuthorInfo-badgeText {\n    left: 36px !important;\n  }\n}\n\n.Topstory-follow {\n  .ContentItem-time {\n    position: absolute !important;\n    top: 16px;\n  }\n\n  .FeedSource-firstline {\n    font-size: 12px;\n    position: relative !important;\n    top: -4px;\n  }\n}\n\n.Topstory-recommend {\n  .AnswerItem-authorInfo,\n  .ArticleItem-authorInfo {\n    margin-top: 16px;\n  }\n\n  .ContentItem-time {\n    position: absolute !important;\n    top: 22px;\n  }\n\n  .ContentItem-title {\n    position: relative !important;\n    top: -6px;\n  }\n}\n\n.Card.AnswerCard {\n  position: relative;\n  .ContentItem-time {\n    position: absolute !important;\n    top: -14px;\n  }\n}\n\n#ProfileMain {\n  .RichContent {\n    position: relative;\n  }\n\n  .ContentItem-title > div {\n    position: relative !important;\n    top: -8px;\n  }\n\n  .ContentItem-time {\n    position: absolute !important;\n    top: -77px;\n  }\n\n  .ActivityItem-meta {\n    position: relative !important;\n    top: -8px;\n    font-size: 12px;\n  }\n\n  .ActivityItem-meta {\n    display: block;\n    span:nth-of-type(2) {\n      position: relative;\n    }\n  }\n\n  .ActivityItem-metaTitle {\n    padding-right: 12px;\n  }\n}\n\n.Question-main {\n  .ContentItem-time {\n    position: absolute !important;\n    top: -4px;\n  }\n}\n\n.AuthorInfo--plain {\n  .AuthorInfo-badge {\n    font-size: 13px;\n    > :first-child:before {\n      content: \"\";\n      padding-left: 7px;\n    }\n  }\n}\n\n.ContentItem-title {\n  font-weight: 400;\n  * {\n    color: #0077cc !important;\n    &:hover {\n      color: #0095ff !important;\n    }\n  }\n}\n\n.Card.TopstoryItem.TopstoryItem-isRecommend {\n  border-left-width: 1px !important;\n  border-color: #eff0f1 !important;\n}\n\n.RichContent--unescapable.is-collapsed .ContentItem-rightButton {\n  position: absolute;\n  z-index: 1;\n  bottom: 90px;\n  left: 0;\n  width: 100%;\n  color: #175199;\n}\n\n.RichContent-collapsedText {\n  display: none;\n}\n\n.AppHeader {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  background-color: rgba(0, 0, 0, 0);\n}\n\n.AppHeader.is-fixed {\n  position: absolute;\n  -webkit-backdrop-filter: none;\n  backdrop-filter: none;\n  background-color: rgba(0, 0, 0, 0) !important;\n}\n\n.AppHeader-Tabs li:nth-child(2) {\n  display: none;\n}\n\n#SearchMain {\n  .is-fixed.is-bottom {\n    .VoteButton--up::before {\n      top: -36px;\n      top: calc(-1 * var(--arrow_top) - 2px);\n    }\n\n    .VoteButton--down:after {\n      top: calc(var(--arrow_top) - 6px) !important;\n    }\n  }\n\n  .VoteButton--down:after {\n    top: calc(var(--arrow_top) - 6px) !important;\n  }\n}\n\n.ContentItem-title {\n  font-size: 16px;\n}\n\n.Topstory-container {\n  padding: 0;\n  background-color: white;\n  border-left-width: 1px !important;\n  border-color: #eff0f1 !important;\n}\n\n.HotItem-title {\n  font-weight: 400;\n}\n\n.SearchItem-meta.SearchItem-authorInfo {\n  margin-top: 17px;\n}\n\n.QuestionPage {\n  background-color: white;\n  .Question-main {\n    border-left-width: 1px !important;\n    border-color: #eff0f1 !important;\n    background-color: white;\n    padding: 0;\n    .List .ContentItem-meta {\n      padding-top: 14px;\n    }\n\n    .ztext.AuthorInfo-badgeText {\n      position: relative;\n    }\n  }\n\n  .Card.MoreAnswers .ContentItem-meta {\n    padding-top: 14px;\n  }\n\n  .UserLink.AuthorInfo-avatarWrapper * {\n    width: 32px !important;\n    height: 32px;\n    border-radius: 3px;\n  }\n}\n\n.ContentItem-meta {\n  margin-bottom: 14px !important;\n}\n\n.QuestionHeader {\n  margin-top: 0 !important;\n}\n\n.QuestionHeader-title {\n  font-weight: 400;\n  padding-bottom: 10px;\n  border-bottom: 1px solid #e4e6e8;\n  margin-bottom: 16px;\n  position: relative;\n  left: -60px;\n}\n\n.QuestionHeader-tags {\n  position: absolute;\n  bottom: 60px;\n}\n\n.QuestionHeader-footer {\n  margin-top: 50px;\n}\n\n.QuestionMainAction.ViewAll-QuestionMainAction,\nhtml[data-theme=\"dark\"] .VoteButton:not(:disabled):hover {\n  border-color: white;\n}\n\n.AnswerItem {\n  font-family: SF Pro Text, -apple-system !important;\n}\n\n.ztext {\n  font-family: SF Pro Text;\n  p {\n    margin: 1em 0;\n    line-height: 155% !important;\n  }\n\n  blockquote {\n    margin-top: 1em !important;\n  }\n}\n\n.ztext-empty-paragraph {\n  display: none !important;\n}\n\n.ecommerce-ad-arrow {\n  padding: 0 12px 0 12px !important;\n  height: 64px;\n  width: 61.8%;\n}\n\n.ecommerce-ad-arrow-img {\n  height: 40px !important;\n  width: 40px !important;\n}\n\n.MCNLinkCard,\n.LinkCard.LinkCard--hasImage {\n  width: 61.8%;\n}\n\n.LinkCard-content {\n  justify-content: flex-start;\n  .LinkCard-text {\n    order: 2;\n  }\n\n  .LinkCard-imageCell {\n    order: 1;\n    margin: 0 8px 0 0;\n  }\n}\n\n.LinkCard-image.LinkCard-image--default,\n.LinkCard-image--square {\n  height: 44px;\n  width: 44px;\n}\n\n.LinkCard-title {\n  font-weight: 400;\n  color: #0077cc !important;\n  &:hover {\n    color: #0095ff !important;\n  }\n}\n\n.Card.AnswersNavWrapper .RichContent-inner {\n  padding-right: 0 !important;\n  padding-left: 0 !important;\n}\n\n.Card.SearchResult-Card {\n  padding: 0;\n}\n\n.CommentCollapseButton {\n  margin-left: 17px;\n}\n\n.CommentEditorV2--active {\n  display: none !important;\n}\n\n.CommentItemV2 {\n  padding: 0px 20px 0 20px;\n  .UserLink-link {\n    font-weight: 400;\n  }\n\n  .UserLink-avatar {\n    position: relative;\n    right: 6px;\n  }\n}\n\n.CommentItemV2-likeBtn {\n  span .CommentItemV2-hoverBtn {\n    display: none !important;\n  }\n}\n\n.CommentItemV2-talkBtn {\n  font-size: 0;\n}\n\n.CommentItemV2 {\n  img.Avatar.UserLink-avatar {\n    position: relative;\n    top: 3px;\n    left: 3px;\n    height: 17px;\n    width: 17px;\n    border-radius: 100%;\n  }\n}\n\n.CommentItemV2-roleInfo:before {\n  content: \"􀑫\";\n  font-family: \"Helvetica Neue\";\n  font-size: 13px;\n  color: #24a0ed !important;\n  padding-left: 2px;\n}\n\n.Modal.Modal--fullPage {\n  margin-left: 12.3%;\n}\n\nfigure {\n  display: inline;\n}\n\n:root {\n  --divi: 70px;\n  --divl: 20px;\n}\n\n.Card.TopstoryItem.TopstoryItem--old.TopstoryItem-isFollow,\n.Card.TopstoryItem.TopstoryItem--old.TopstoryItem-isRecommend {\n  &:before {\n    content: \"\";\n    position: absolute;\n    top: -1px;\n    left: calc(-1 * var(--divi) + var(--divl));\n    width: calc(100% + var(--divi) - var(--divl));\n    border-bottom: 1px solid #eff0f1;\n  }\n}\n\n.List > div:nth-child(2) > div > div:first-child {\n  &:before {\n    position: absolute;\n    top: -1px;\n    left: calc(-1 * var(--divi) + var(--divl));\n    width: calc(100% + var(--divi) - var(--divl));\n    border-bottom: 1px solid #eff0f1;\n  }\n}\n\n.List {\n  position: relative;\n}\n\n#QuestionAnswers-answers .List-header {\n  border: 1px !important;\n  border-bottom-color: #eff0f1;\n  position: relative;\n  left: -60px;\n  margin-right: 0;\n  &::after {\n    position: absolute;\n    top: 51px;\n    left: calc(-1 * var(--divi) + var(--divl));\n    border-bottom: 1.5px solid #eff0f1;\n    width: calc(100% + var(--divi));\n  }\n}\n\n.List-item {\n  border: 1px !important;\n  border-bottom-color: #eff0f1;\n  padding-bottom: 12px;\n  + .List-item {\n    &:after {\n      border-bottom-color: #e4e6e8 !important;\n      left: calc(-1 * var(--divi));\n      width: calc(100% + var(--divi));\n    }\n  }\n}\n\n.TooltipContent-wrapper {\n  visibility: visible !important;\n}\n\n.Voters,\n.Footer,\n.Pc-word,\n[class*=feedAd],\n.GlobalSideBar,\n.Question-sideColumn,\n.KfeCollection-PcCollegeCard-root,\n.Messages-count,\n.PushNotifications-count,\n.css-ybodb,\n.SearchBar-askButton,\n.Reward div:first-child,\n.Reward-countZero {\n  display: none !important;\n}\n\n.List-item:has(.KfeCollection-PaidAnswerFooter) {\n  display: none !important;\n}\n\n[aria-label=\"知乎\"] {\n  opacity: 0;\n}\n\ndiv {\n  box-shadow: none !important;\n}\n\nbody {\n  font-family: \"SF Pro Text\";\n}\n\n::placeholder {\n  -webkit-text-security: none;\n  color: #f6f6f6 !important;\n  pointer-events: none;\n}\n}\n\n@-moz-document domain(\"zhuanlan.zhihu.com\") {\n.Post-Main.Post-NormalMain .like,\n.Post-Main.Post-NormalMain .Button.BottomActions-CommentBtn.Button--plain.Button--withIcon.Button--withLabel {\n  font-family: empty !important;\n}\n\n.Post-Main.Post-NormalMain .Sticky.RichContent-actions.is-bottom {\n  height: 42px;\n}\n\n.Post-Main.Post-NormalMain {\n  .ContentItem-actions {\n    -webkit-backdrop-filter: none !important;\n    background-color: rgba(0, 0, 0, 0) !important;\n  }\n\n  .Sticky.RichContent-actions.is-fixed.is-bottom {\n    -webkit-backdrop-filter: none !important;\n    background-color: rgba(0, 0, 0, 0) !important;\n    > span:nth-child(1) {\n      position: absolute;\n      bottom: 35vh;\n      visibility: visible;\n      text-align: center;\n      color: #6a737c;\n    }\n\n    .Button.BottomActions-CommentBtn {\n      bottom: 0px !important;\n    }\n\n    .VoteButton,\n    .ContentItem-action,\n    .ContentItem-actions button:nth-child(6),\n    .Post-ActionMenuButton {\n      display: none !important;\n    }\n  }\n}\n\n.Post-Main.Post-NormalMain {\n  .Popover.ShareMenu button {\n    color: transparent;\n    div {\n      color: #8590a6;\n    }\n  }\n\n  .likeCount-inner {\n    position: relative;\n    left: -2px;\n  }\n}\n}\n\n@-moz-document domain(\"zhihu.com\") {\n.Sticky.ColumnPageHeader.is-fixed {\n  position: absolute;\n}\n\n.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel,\n.VoteButton--up,\n.CommentItemV2-footer .Button.CommentItemV2-likeBtn.Button--plain,\n.ContentItem-actions > button:nth-child(2) * {\n  font-family: empty;\n}\n\n.Button.VoteButton.VoteButton--up,\n.Post-Main.Post-NormalMain .like,\n.Post-Main.Post-NormalMain .Button.BottomActions-CommentBtn.Button--plain.Button--withIcon.Button--withLabel {\n  font-family: empty;\n}\n}",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "zhihu",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "zhihu",
+    "updateDate": 1667964687798,
+    "_id": "b0218a95-58af-42e2-838f-16fee7f8ce10",
+    "_rev": 1667964687799,
+    "id": 32
+  },
+  {
+    "enabled": true,
+    "installDate": 1664933309737,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "customName": "Reddit",
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\treddit\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document domain(\"reddit.com\") {\n/* ads */\n[data-adclicklocation]:has(._2oEYZXchPfHwcf9mTMGMg8) {\n  display: none;\n}\n\n@font-face {\n  font-family: 'Pro Text';\n  src: url(\"https://cdn.jsdelivr.net/gh/kyle1an/SF-@main/testestest3/SF-Pro-Text-Bold.otf\");\n  unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;\n  font-weight: 700;\n  font-style: normal;\n}\n\n@font-face {\n  font-family: 'Pro Text';\n  src: url(\"https://cdn.jsdelivr.net/gh/kyle1an/SF-@main/testestest3/SF-Pro-Text-BoldItalic.otf\");\n  unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;\n  font-weight: 700;\n  font-style: italic;\n}\n\n._3RPJ8hHnfFohktLZca18J6 > a {\n  display: none;\n}\n.SubredditVars-r-learnjavascript {\n\n  ._2DJXORCrmcNpPTSq0LqL6i._26pbaCw90eAC80WRqUfICJ,\n  ._2mIbM_6nl-2OnOGEbEMRXa {\n    padding-top: 0 !important;\n  }\n}\n\n._30BbATRhFv3V83DHNDjJAO {\n  opacity: 0;\n}\n\n._1tvdSTbdxaK-BnUbzUIqIY._2GyPfdsi-MbQFyHRECo9GO.cx1ohrUAq6ARaXTX2u8YN {\n  position: absolute;\n}\n\n._2DJXORCrmcNpPTSq0LqL6i._2DJXORCrmcNpPTSq0LqL6i,\n._2mIbM_6nl-2OnOGEbEMRXa._2mIbM_6nl-2OnOGEbEMRXa,\n.zoWOQnp55WuhEugRSwfw1.zoWOQnp55WuhEugRSwfw1 {\n  top: 0px;\n  padding-top: 0;\n}\n\n/*█████Home title */\n._1Y6dfr4zLlrygH-FLmr8x- {\n  margin-left: 17px;\n}\n\n\n/* .􀱁 */\n._13svhQIUZqD9PVzFcLwOKT.styled-outbound-link {\n  font-family: \"SF Compact Text\";\n}\n\n._3AStxql1mQsrZuUIFP9xSg.iaAYGvTNtknkTxuHArCzL {\n  font-family: \"SF Compact Text\";\n\n  span {\n\n    /* by */\n    &:nth-child(1) {\n      font-family: \"SF Compact Text\";\n    }\n  }\n\n  div {\n\n    /* 􀉮u/ */\n    &:nth-child(2) {\n      font-family: \"SF Compact Text\";\n    }\n  }\n}\n\n/* in Comment action */\n.XZK-LTFT5CgGo9MvPQQsy._1LXnp2ufrzN6ioaTLTjGQ1 {\n  &.FOPddbU-vkQ5LYmQP6Fgc._2_lhaFUJdP8q0o2L9MN2TN {\n    font-weight: 400 !important;\n    font-family: \"SF Compact Text\";\n\n    button {\n\n      /* 􀑒 */\n      &:nth-child(2),\n      /* 􀋊 */\n      &:nth-child(4) {\n        display: none;\n      }\n    }\n  }\n\n  &._2_lhaFUJdP8q0o2L9MN2TN {\n    button {\n      /* Reply */\n      &:nth-of-type(1) {\n        // display: none !important;\n      }\n\n      &:nth-of-type(2) {\n        display: none !important;\n      }\n\n      &:nth-of-type(3) {\n        display: none !important;\n      }\n\n      /* Save */\n      &:nth-of-type(4) {\n        font-weight: 300 !important;\n      }\n    }\n\n    div {\n      &:nth-of-type(1) {\n        display: none !important;\n      }\n    }\n  }\n}\n\n/*█████Title action button */\n._10K5i7NW6qcm-UoCtpB3aK {\n\n  /* 􀑒 */\n  &.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap {\n    display: none;\n  }\n\n  &._3tRpmsTw--cwH6_MAO3ZOm._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap {\n    display: none !important;\n  }\n}\n\n._3-miAEojrCvx_4FQ8x3P-s.ssgs3QQidkqeycI33hlBa {\n  div {\n\n    /* 􀉑 */\n    &:nth-child(3) {\n      font-weight: 400 !important;\n      font-family: \"SF Compact Text\";\n    }\n\n    /* 􀉟 */\n    &:nth-child(4) {\n      font-weight: 400 !important;\n      font-family: \"SF Compact Text\";\n    }\n\n    /* 􀕧 */\n    &:nth-child(5),\n    /* 􀋊 */\n    &:nth-child(6) {\n      display: none;\n    }\n  }\n}\n\n/* 􀉑 */\n[id$=\"-comment-share-menu\"] {\n  display: none;\n}\n\n/*@font-face {*/\n/*\tfont-family: 'IBMPlexSans';*/\n/*\tsrc: url(\"https://cdn.jsdelivr.net/gh/kyle1an/SF-@main/Pro/SF-Pro-Text-Regular.otf\");*/\n/*\tunicode-range: U+0000-024F, U+0250-02AF, U+02B0-052F, U+1D00-1DBF, U+1DC0-20CF, U+2100-218F, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;*/\n/*\tfont-weight: 400;*/\n/*}*/\n._1rZYMD_4xY3gRcSS3p8ODO {\n  // font-family: \"SF Compact Text\";\n}\n\n.FHCV02u6Cp2zYL0fhQPsO {\n  // font-family: \"SF Compact Text\";\n  &._25BV1fTi10_HqCnD195T85 {\n    display: none;\n  }\n}\n\n.y8HYJ-y_lTUHkQIc1mdCq._2INHSNB8V5eaWp4P0rY_mE * {\n  /*font-size: 18px;*/\n  font-family: \"SF Pro Text\";\n}\n\n._1oRQu-aolgpPPJDblUGTw5,\n.jEUbSHJJx8vISKpWirlfx,\n.avKlJzxZU3brq4nAX0_i1 {\n  display: none !important;\n}\n\n._2vEf-C2keJaBMY9qk_BxVn:has(.icon-premium_fill) {\n  display: none !important;\n}\n\n/* username, ago */\n._2mHuuvyV9doV3zwbZPtIPG * {\n  color: #0077cc !important;\n}\n\n._1S45SPAIb30fsXtEcKPSdt {\n  &._3ezOJqKdLbgkHsXcfvS5SA {\n    font-family: \"SF Compact Text\";\n    /*justify-content: flex-end !important;*/\n    /*position: absolute !important;*/\n    /*float: bottom !important;*/\n    /*float: right !important;*/\n    bottom: 20px !important;\n    right: 0 !important;\n  }\n\n  &._3c9Go6433BnvYx8_7MkPnt._3ezOJqKdLbgkHsXcfvS5SA._2k27lgIDltx9kOzVGXt48i {\n    position: relative !important;\n    bottom: 0px !important;\n  }\n}\n\n._3obgdFz00GvpqpuX8QCsNK {\n  opacity: 0;\n}\n\n.c_rRg_d32D6ZO5sV8DmMM._1McO-Omm_mC2bkTnVgD6NV * {\n  opacity: 1 !important;\n}\n\n/*repeated title*/\n.-DOLBAFWXMQX1Q3ErGO8I {\n  visibility: hidden !important;\n}\n\n._1vyLCp-v-tE5QvZovwrASa {\n  padding-top: 9px;\n}\n\n/*post*/\n._2jJNpBqXMbbyOiGCElTYxZ {\n  display: none;\n  margin-bottom: 0;\n}\n\n.uI_hDmU5GSiudtABRz_37 {\n  /*border-top-left-radius: 0;*/\n  /*border-top-right-radius: 0;*/\n}\n\n/*comment*/\n._1r4smTyOEZFO91uFIdWW6T.aUM8DQ_Nz5wL0EJc_wte6 {\n  display: none;\n}\n\n.wBtTDilkW_rtT2k5x3eie {\n  background-color: rgba(0, 0, 0, 0) !important;\n  border: 0 !important;\n  margin-bottom: 0;\n}\n\n/****************************\n\t***** Removed Elements ******\n\t****************************/\n#header .pagename,\n/* remove page name e.g. 'Gaming' */\n.giftgold,\n.goldvertisement,\n.gilded-comments-link,\n.gilded-link,\n/* gold related */\n.trophy-area,\n/* trophy box */\n.account-activity-box,\n/* link to account activity */\n.listing-chooser .contents h3,\n/* 'multireddits' title */\n.footer-parent,\n/* entire footer */\n.side .create,\n/* create your own subreddit link */\n.reddiquette,\n/* reddiquette link below comment box */\n.shortlink,\n/* shortlink in right sidebar */\n.thumbnail.self,\n.thumbnail.default,\n#BigEditor h3,\n/* title for RES big editor for messages */\n.bottommenu.debuginfo,\n/* pi debug info */\n#progressIndicator img,\n/* NER next-page-is-loading indicator, colors do not match with theme */\n.promoted,\n.promotedlink,\n/* promoted entry / ad at the top of page listings */\n.hohoho-header,\n/* link in top bar to secret santa */\n.debuginfo,\n/* info on server that rendered\tthe page */\n.searchpane-toggle-hide,\n/* link to hide search box on search page */\n.sr-interest-bar,\n/* box to find 'interesting' subreddits, displayed on front page */\n.newsletterbar,\n/* box to sign up to newsletter, at top of front page */\n/* ad in sidebar */\n#sponsorship {\n  // display: none !important;\n}\n\n// .sidebox {\n// \t/* sidebar link to secret santa */\n// \t&.hohoho .morelink,\n// \t/* sidebar link to marketplace */\n// \t&.holiday_shopping {\n// \t\tdisplay: none !important;\n// \t}\n// }\n#ad {\n\n  /* ad in sidebar */\n  &_main,\n  &_sponsorship {\n    display: none !important;\n  }\n}\n\n\n}",
+    "usercssData": {
+      "name": "reddit",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "reddit",
+    "updateDate": 1666956743743,
+    "_id": "0df8a87d-5327-435c-9152-f3b3d8ebdee5",
+    "_rev": 1667177600913,
+    "id": 33
+  },
+  {
+    "enabled": true,
+    "installDate": 1606386084642,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tzhWeb\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document domain(\"csdn.net\") {\n.hljs-ln-numbers,\n.hljs-ln-numbers * {\n\tfont-family: XcodeDigits !important;\n}\n.blog {\n\t&-content-box {\n\t\tpadding-bottom: 100px !important;\n\t\twidth: 760px !important;\n\n\t\t* {\n\t\t\tfont-family: SF Pro Text;\n\t\t}\n\t}\n\n\t&-expert-recommend-box {\n\t\tdisplay: none !important;\n\t}\n}\n\n#csdn-toolbar {\n\tdisplay: none !important;\n}\n\npre *,\ncode *,\n.dp-highlighter *,\n.prettyprint,\n[name=\"code\"] * {\n\tfont-family: SF Mono, Monospace;\n}\n\n.csdn {\n\t&-logo {\n\t\topacity: 0;\n\t}\n\n\t&-tracking-statistics mb8 box-shadow,\n\t&-tracking-statistics.mb8.box-shadow,\n\t&-side-toolbar {\n\t\tdisplay: none !important;\n\t}\n\n\t&-toolbar {\n\t\topacity: 0.03;\n\t\tdisplay: none !important;\n\t}\n}\n\n.pre-numbering {\n\tli {\n\t\topacity: 0.2 !important;\n\t\tfont-size: 14px !important;\n\t\tfont-variant-numeric: tabular-nums !important;\n\t}\n\n\t-webkit-user-select: none !important;\n\t/* Chrome all / Safari all */\n\t-moz-user-select: none !important;\n\t/* Firefox all */\n\t-ms-user-select: none !important;\n\t/* IE 10+ */\n\tuser-select: none !important;\n}\n\n.left-toolbox {\n\tposition: static !important;\n}\n\n.recommend {\n\n\t&-recommend-box,\n\t&-right {\n\t\tdisplay: none !important;\n\t}\n}\n\na {\n\n\t&[data-type=\"app\"],\n\t&[data-type=\"cs\"],\n\t&[data-type=\"report\"] {\n\t\tdisplay: none !important;\n\t}\n}\n\n.vip-caise,\n#asideFooter,\n.bdsharebuttonbox,\n.reward-user-box,\n.t0,\n.comment-edit-box,\naside,\n.tool-box.vertical,\n.leftPop,\n/*main .recommend-box,*/\n.template-box {\n\tdisplay: none !important;\n}\n\ndiv {\n\tbox-shadow: none !important;\n}\n\n.nodata,\n.container.clearfix {\n\tbackground-image: none !important;\n\tbackground: none !important;\n\tbackground-color: rgba(0, 0, 0, 0) !important;\n}\n\nmain,\n#mainBox.container.clearfix {\n\twidth: 760px !important;\n}\n\n}\n\n@-moz-document domain(\"weibo.com\") {\n.UG_left_nav,\n.UG_box_l,\n#pl_unlogin_home_feed,\n.footer_link.clearfix,\n.webim_fold.webim_fold_v2.clearfix,\n.PCD_mplayer.clearfix,\n[suda-uatrack=\"key=topnav_tab&value=video\"],\n[suda-uatrack=\"key=topnav_tab&value=discover\"],\n[suda-uatrack=\"key=topnav_tab&value=game\"],\n.W_tips.tips_warn.clearfix,\n.WB_feed_publish.clearfix,\n.W_new_count,\ndiv.WB_starcover * {\n\tdisplay: none !important;\n}\n\n.tab_feed_a.clearfix.S_line1 {\n\tmargin-top: 0;\n\tborder-top: 0;\n\tpadding-top: 0;\n}\n\n.WB_repeat.S_line1 {\n\tpadding-top: 9px !important;\n}\n\n.gn_logo {\n\topacity: 0 !important;\n}\n\n.WB_global_nav.WB_global_nav_v2 {\n\tposition: absolute !important;\n\tborder-top: 0;\n}\n\n.WB_frame,\nplc_main,\nbody {\n\tbackground: rgba(255, 255, 255, 0)\n}\n\n.WB_global_nav .ficon_send {\n\tbackground: linear-gradient(to bottom, #fff 0%, #fff 100%);\n}\n\n.WB_cardwrap.WB_feed_type.S_bg2.WB_feed_vipcover.WB_feed_like {\n\tborder: 0 !important;\n\tmargin: 0 !important;\n}\n\n\n}\n\n@-moz-document domain(\"jianshu.com\") {\n._1AawTM._1OhGeD {\n\topacity: 0;\n}\n\n[src^=\"https://pos.baidu.com/\"],\n._3JYrtj,\n._2MpoKb._1OyPqC._3Mi9q9._2WY0RL,\n._1OyPqC._3Mi9q9._2WY0RL._1YbC5u,\n[aria-label=\"赞赏作者\"],\n[aria-label=\"查看赞赏列表\"],\n._13lIbp,\n._26JdYM {\n\tdisplay: none;\n}\n\n._3Pnjry {\n\n\t& > div:nth-child(2),\n\t& > div:nth-child(3) {\n\t\tdisplay: none;\n\t}\n}\n\n._1Jdfvb {\n\tpadding: 7px 16px;\n\n\t.W2TSX_ {\n\t\theight: 28px;\n\t\tfont-size: 12px;\n\t\tpadding: 6px 18px;\n\t}\n}\n\n._1CSgtu,\n.ant-affix {\n\tposition: absolute !important;\n}\n\n._1CSgtu {\n\t/*background-color: #f9f9f9;*/\n\tbackground-color: rgba(249, 249, 249, 1);\n\tbox-shadow: none;\n}\n\n._3VRLsv {\n\tpadding-top: 0;\n}\n\n/*div._2xr8G8 {*/\n/*\t-webkit-backdrop-filter: saturate(180%) blur(20px) !important;*/\n/*\tbackdrop-filter: saturate(180%) blur(20px) !important;*/\n/*\tbackground-color: rgba(255, 255, 255, 0.38) !important;*/\n/*}*/\n\n}\n\n@-moz-document domain(\"nowcoder.com\") {\n.nowcoder-header.js-nowcoder-header {\n\tposition: absolute !important;\n}\n\n.nowcoder-logo {\n\topacity: 0;\n}\n\n.collect-fixed-foot.js-fixed-favorite.nc-req-auth,\n.discuss-title.js-fixed-title.fixed-title,\n.ncnav.flex-row.bg-white.plr-1.vux-1px-b,\n.ft-wrap.js-nowcoder-footer,\n.gotop.js-nav-go-top,\n.fixed-wb,\n.qq,\n.wx,\n.feedback,\n.qrcode,\n.module-box.side-topic-box,\n#jsEditorModuleBody.module-body,\n.main-nav,\n.cpn-tag-link.radius.m-1.fs-s {\n\tdisplay: none !important;\n}\n\n.ncmain.appwithsplit {\n\tpadding-top: 0;\n}\n\n.final-main.clearfix,\n.nk-main.clearfix {\n\tpadding-bottom: 15px;\n}\n\n}\n\n@-moz-document domain(\"mcar.co\") {\n.WB_widgets.WB_FB_show {\n\tdisplay: none;\n}\n\n[src=\"http://mcar.fun/ad/rrtvad960x90.jpg\"],\n[style=\"background-color:#FC0;margin-top:1px; width:500px; height:90px;\"],\n[style=\"background-color:#FF0;background-float:right;margin-top:-371px;margin-left:500px; width:234px; height:375px;\"] {\n\tdisplay: none;\n}\n\n/*.showhide {\n\t\twidth: 757px !important;\n\t\theight: 425px !important;\n\t}*/\nvideo {\n\twidth: 735px !important;\n\theight: 403px !important;\n}\n\n}\n\n@-moz-document domain(\"https://sspai.com/post\") {\n/*取消浮动顶部导航栏*/\n.recommend-card,\n.icon_box,\n.link_box,\n.ssp_text {\n\tdisplay: none !important;\n}\n\n#app {\n\tpadding-bottom: 0 !important;\n\n\t&-head {\n\t\tposition: absolute;\n\t}\n\n\t&-footer {\n\t\tdisplay: none !important;\n\t}\n}\n\n.advertisementCardBox.adOrigin .corner {\n\tdisplay: none !important;\n}\n\n}\n\n@-moz-document domain(\"smzdm.com\") {\n#global-search.mini-bar {\n\tposition: absolute;\n}\n\n.author-right.J_side_scroll_fixed.J_side_fixed_copy.J_side_fixed_animation {\n\tposition: absolute !important;\n}\n\n.left-share.J_common_shares,\n.qrcode {\n\tdisplay: none;\n}\n\n.comment {\n\t&_list {\n\t\tpadding-bottom: 0 !important;\n\t\tmargin-bottom: 0 !important;\n\t}\n\n\t&_blockquote {\n\t\tpadding-bottom: 0 !important;\n\t\tpadding-top: 0 !important;\n\n\t\t.comment_con {\n\t\t\tposition: relative;\n\t\t\ttop: 9px\n\t\t}\n\t}\n\n\t&_avatar_time {\n\t\topacity: 0.38 !important;\n\t\tmargin-top: 0 !important;\n\t\tmargin-bottom: 0 !important;\n\t\theight: 27px;\n\t}\n\n\t&_action {\n\t\theight: 18px !important;\n\t}\n\n\t&_con {\n\t\tcolor: black;\n\t\tposition: relative;\n\t\ttop: 2px;\n\n\t\t&Wrap {\n\t\t\t// height:27px;\n\t\t}\n\t}\n}\n\n.jubao,\n.atta,\n.reply {\n\tdisplay: none !important;\n}\n\n\n\n.icon-medal {\n\topacity: 0.38 !important;\n}\n\n.blockquote_wrap {\n\tpadding-top: 0 !important;\n\tmargin-bottom: 0 !important;\n}\n\n.jubao,\n.dingNum,\n.caiNum,\n.atta,\n.reply {\n\tvertical-align: 18px !important;\n}\n\n}\n\n@-moz-document domain(\"douban.com\") {\n\t#landing-bar{\n\t\tdisplay:none !important;\n\t}\n}\n\n@-moz-document domain(\"movie.douban.com\") {\n/*谁在看这部电影*/\n.top-nav-doubanapp,\n#subject-others-interests ul,\n#landing-bar,\n.ul_subject_menu.bicelink.color_gray.pt6.clearfix,\n[href=\"https://movie.douban.com/help/movie#t0-qs\"],\n.mobile-app-entrance.block5.app-movie {\n\tdisplay: none !important;\n}\n\n.time {\n\tfont-family: SF Compact Text;\n}\n\n#comments-section .comment-item .comment-vote .vote-count {\n\tcolor: green;\n}\n\n#comments-section .comment-item {\n\tpadding-left: 60px;\n\tpadding-right: 0;\n}\n\n#comments {\n\toverflow: visible !important;\n\n\t.comment-item {\n\t\tpadding: 10px 0 25px 60px;\n\t}\n\n\t.avatar {\n\t\tposition: absolute;\n\t\ttop: -11px;\n\t\tleft: 40px;\n\n\t\timg {\n\t\t\twidth: 14px !important;\n\t\t}\n\t}\n}\n\n.comment-item {\n\toverflow: visible !important;\n\tmargin-bottom: 0 !important;\n\n\t* {\n\t\toverflow: visible !important;\n\t}\n\n\t.comment-info {\n\t\tposition: absolute;\n\t\ttop: -9px;\n\t\tbackground: rgba(255, 255, 255, 1) !important;\n\t\tfont-size: 11px;\n\t}\n\n\t.comment-vote {\n\t\tposition: absolute;\n\t\tleft: -4px;\n\t\toverflow: visible !important;\n\t\tfont-variant-numeric: tabular-nums !important;\n\n\t\tspan:nth-of-type(2) {\n\t\t\tfont-size: 9px;\n\t\t\tdisplay: none;\n\t\t}\n\n\t\ta {\n\t\t\tfont-size: 0;\n\n\t\t\t&:after {\n\t\t\t\tposition: absolute;\n\t\t\t\tcontent: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='18' fill='rgb(187, 192, 196)' stroke='none'><path d='M2 26h32L18 10 2 26z'></path></svg>\") !important;\n\t\t\t\ttop: -3.5px;\n\t\t\t\tleft: -32px;\n\t\t\t}\n\t\t}\n\t}\n}\n\n.rec,\n#interest_sect_level.clearfix {\n\tvisibility: hidden;\n}\n\n.indent.clearfix,\n.episode_list {\n\tmargin-bottom: 0;\n}\n\n.review-content.clearfix {\n\tfont-size: 16px;\n}\n\n.comment-content {\n\tfont-size: 15px;\n}\n\n.action {\n\tmargin-top: 7px !important;\n\n\t&.fixed-action {\n\t\tpadding: 7px 0 !important;\n\t}\n}\n\n.main.review-item {\n\tpadding-bottom: 7px;\n}\n\n}\n\n@-moz-document domain(\"zhipin.com\") {\n.smallbanner {\n\tposition: absolute\n}\n\n}\n\n\n@-moz-document domain(\"bilibili.com\"),\ndomain(\"ithome.com\"),\ndomain(\"sspai.com\") {\n/*.bilibili-player-video-wrap *,*/\n/*.bilibili-player-video-danmaku *,*/\n/*.bilibili-player * {*/\n/*\tfont-size: ;*/\n/*}*/\n.b-danmaku {\n\tfont-family: SF Compact Text,\n\t-apple-system !important;\n\tfont-size: 21px !important;\n}\n\n.bilibili-player-video-time-wrap {\n\tfont-family: SF Pro Text,\n\t-apple-system !important;\n}\n\n}\n\n@-moz-document domain(\"segmentfault.com\") {\n#sf-header,\n.data-fix {\n\tposition: static !important;\n}\n\n}\n\n@-moz-document domain(\"yuque.com\") {\n#header {\n\tposition: absolute;\n}\n\n}",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "zhWeb",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "zhWeb",
+    "updateDate": 1667044247629,
+    "_id": "45b81496-9c95-44b4-8dca-00108cefcabd",
+    "_rev": 1667044247629,
+    "id": 34
+  },
+  {
+    "enabled": true,
+    "installDate": 1665123722281,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           bilibili.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\t  stylus\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"bilibili.com\") {\n/* Insert code here... */\n/* ad */\n.bili-dyn-ads,\n.ad-report.video-card-ad-small,\n.bili-video-card:has(.bili-video-card__info--ad) {\n  display: none !important;\n}\n\n/* ad */\n.v-popover-wrap:has(.loc-mc-box__pic),\n.v-popover-wrap:has(.download-entry.download-client-trigger) {\n  display: none !important;\n}\n.bpx-player-subtitle-panel-text,\n.subtitle-item-text,\n.bilibili-player-video-time-now,\n.bilibili-live-player *,\n.fake-danmu * {\n  font-family: SF Pro Text, -apple-system !important;\n  font-variant-numeric: tabular-nums;\n}\n\n.bilibili-player-video-btn-send.bui.bui-button.bui-button-blue {\n  background-color: rgb(231, 231, 231) !important;\n  color: rgb(153, 153, 153);\n}\n\n.bilibili-live-player-video-controller-btn-item.bilibili-live-player-video-controller-feedback-btn {\n  display: none !important;\n}\n\n#arc_toolbar_report {\n  .like:before {\n    // content: \"􀊀\";\n    font-size: 24px;\n    padding-right: 7px;\n    color: #757575;\n  }\n\n  .like.on:before {\n    color: #00a1d6;\n  }\n\n  .van-icon-videodetails_like {\n    display: none;\n  }\n}\n\n// \t.bb-comment,\n// \t#comment {\n// \t\t.like,\n// \t\t.hate {\n// \t\t\ti {\n// \t\t\t\tdisplay: none !important;\n// \t\t\t}\n// \t\t\t&:hover:before {\n// \t\t\t\tcolor: #1890ff;\n// \t\t\t}\n// \t\t}\n// \t\t.like {\n// \t\t\t&:before {\n// \t\t\t\t// content: \"􀉿\";\n// \t\t\t\tpadding-right: 3px;\n// \t\t\t}\n// \t\t}\n// \t\t.liked {\n// \t\t\t&:before {\n// \t\t\t\t// content: \"􀊀\";\n// \t\t\t\tcolor: #1890ff;\n// \t\t\t}\n// \t\t}\n// \t\t.hate {\n// \t\t\t&:before {\n// \t\t\t\t// content: \"􀊁\";\n// \t\t\t}\n// \t\t}\n// \t\t.hated {\n// \t\t\t&:before {\n// \t\t\t\t// content: \"􀊂\";\n// \t\t\t\tcolor: #1890ff;\n// \t\t\t}\n// \t\t}\n// \t}\n.reply-item.reply-wrap {\n  padding-bottom: 0 !important;\n}\n\n.reply-con .user {\n  padding: 0 !important;\n}\n\n.con {\n  padding-bottom: 0 !important;\n}\n\n/*去分类区块*/\n.num,\n.hinter.p-absolute.a-splashing,\n.appeal-text,\n.comment-send,\n#live_recommand_report,\n#link-footer-vm,\n.live-haruna-ctnr.z-live-haruna.floating.ts-dot-4,\n.side-bar-cntr,\n.announcement-wrapper.clearfix.no-select,\n#gift-control-vm,\n.chat-item.system-msg.border-box,\n.draft-holder-block,\n.extension,\n[report-id=\"charge\"],\n#slide_ad,\n#bannerAd {\n  display: none !important;\n}\n\n.nav-link-ul.mini,\n.mini-vip.van-popover__reference,\n.mini-upload.van-popover__reference,\n[href=\"https://member.bilibili.com/v2#/home\"] {\n  visibility: hidden !important;\n}\n\n.bilifont.bili-Navbar_logo,\n.header-icon-Navbar_logo,\n[report-id=\"playpage_contribution\"],\n.feedback-btn,\n::placeholder {\n  opacity: 0;\n}\n\n#reco_list {\n  opacity: 0.62 !important;\n}\n\n.player {\n  * {\n    box-shadow: none !important;\n  }\n}\n\n.up-info .u-info .name .username.is-vip:hover {\n  color: #000000 !important;\n}\n\n.default-btn {\n  &.charge-btn.following-charge-btn {\n    background-color: rgb(231, 231, 231);\n    border-color: rgb(231, 231, 231);\n    color: rgb(153, 153, 153);\n  }\n\n  &.follow-btn.b-gz.not-follow {\n    background-color: rgb(231, 231, 231) !important;\n    color: rgb(153, 153, 153);\n  }\n}\n\n.comment {\n  &-header.clearfix {\n    margin-bottom: 0 !important;\n  }\n\n  &-list {\n    padding-top: 0 !important;\n  }\n}\n\n.con {\n  border: 0 !important;\n}\n\n[report-id=\"abstract_spread\"],\n[report-id=\"abstract_unspread\"] {\n  margin-top: 0 !important;\n}\n}",
+    "usercssData": {
+      "name": "bilibili.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "stylus",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "bilibili.com",
+    "updateDate": 1669454781616,
+    "_id": "6667d97e-178e-49d0-824b-f7e89939d87d",
+    "_rev": 1669454781616,
+    "id": 35
+  },
+  {
+    "enabled": true,
+    "installDate": 1649746332144,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           github.dev\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\tless\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"github.dev\"),\ndomain(\"github.com\") {\n@font-face {\n  font-family: 'XcodeDigits';\n  src: local('XcodeDigits Regular'), url('https://cdn.jsdelivr.net/gh/meewill/SF/Fonts/XcodeDigits-regular.ttf');\n  unicode-range: U+0030-0039;\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n\n:root {\n  --monospace-font: 'SF Mono', ui-monospace, monospace;\n  --xcode: XcodeDigits;\n  --compact: 'SF Compact Text', 'SF Pro Text', -apple-system, sans-serif;\n  --compact-rounded: 'SF Compact Rounded', 'SF Pro Text', -apple-system, sans-serif;\n  --pro-text: 'SF Pro Text', -apple-system, sans-serif;\n  --pro: 'SF Pro', -apple-system, sans-serif;\n  --font-family: var(--pro-text);\n}\n\n* {\n  font-feature-settings: 'cv01', 'cv02', 'cv03', 'ss04' 0; // -webkit-font-smoothing: antialiased;\n  // -moz-osx-font-smoothing: grayscale;\n}\n\nhtml {\n  -webkit-font-smoothing: antialiased !important;\n}\n\n.line-numbers {\n  -webkit-font-smoothing: initial !important;\n}\n\n.sticky-line-number,\n.overlayWidgets [widgetid=\"editor.contrib.stickyScrollWidget\"] [style*=\"--vscode-editorStickyScroll\"]:first-of-type,\n#status\\.editor\\.selection a,\n.marker-line,\n.monaco-editor .margin-view-overlays,\n.editor-container .margin-view-overlays {\n  font-family: var(--xcode), var(--compact) !important;\n}\n\n.pane-body .detected-link {\n  font-family: var(--xcode), var(--monospace-font) !important;\n}\n\n.notification-toast-container [aria-label='Your Code installation appears to be corrupt. Please reinstall.\\, notification'] {\n  display: none !important;\n}\n\n.notification-toast.notification-fade-in-done:has([aria-label='Your Code installation appears to be corrupt. Please reinstall.\\, notification']) {\n  box-shadow: none !important;\n}\n\n.bb svg,\n.mac {\n  font-family: var(--compact) !important;\n}\n\n.sticky-widget,\n.editor-scrollable {\n  // -webkit-font-smoothing: antialiased !important;\n  // -webkit-font-smoothing: auto !important;\n  span {\n    font-weight: 500; //letter-spacing: 0.015rem !important;\n    .mtkb {\n      -webkit-font-smoothing: initial !important;\n      font-weight: 800;\n    }\n  }\n}\n\n.monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab:hover:not(.active) {\n  outline: 1px dashed;\n  outline-offset: -5px;\n}\n\n// .monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.active,\n// .monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.active:hover {\n// outline: 1px solid;\n// outline-offset: -5px;\n// }\n.monaco-list .monaco-list-row:hover {\n  outline: 1px dashed #f38518;\n  outline-offset: -1px;\n}\n\n.monaco-workbench .part.editor > .content .editor-group-container > .title {\n  .tabs-container > .tab .tab-label,\n  .title-label {\n    order: 3;\n  }\n\n  .tabs-container > .tab {\n    padding-left: 0;\n    padding-right: 10px;\n    > .tab-actions {\n      order: 2;\n      .actions-container {\n        justify-content: flex-end;\n        display: flex;\n      }\n    }\n  }\n\n  .tabs-container > .tab.sizing-fit {\n    width: initial;\n  }\n}\n\n.monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab > .tab-actions > .monaco-action-bar {\n  width: 27px;\n}\n\n.open-editors .monaco-list .monaco-list-row {\n  padding-left: 14px;\n}\n\ndiv.scm-editor-placeholder {\n  font-family: var(--compact) !important;\n}\n\n.timeline-timestamp {\n  font-family: var(--compact-rounded) !important;\n}\n\n.load-fonts(@monoFamilies,\n@tarMo,\n@monoWeights,\n@allUnicode);\n.load-fonts(@textFamilies,\n@tarPT,\n@allWeights,\n@generalUnicode,\ntrue);\n.load-stretch-fonts(@textFamilies,\n@tarCd,\n@allWeights,\n@generalUnicode,\ntrue);\n@textFamilies: 'SF Pro',\n'Arial',\n'Helvetica Neue',\n'Helvetica';\n@monoFamilies: 'SF Mono',\n'SFMono-Regular',\n'ui-monospace';\n@repo: 'https://cdn.jsdelivr.net/gh/meewill/SF';\n@styles: {\n  normal: '';\n  italic: 'Italic';\n}\n\n@thinWeights: {\n  Thin: 200;\n}\n\n@usualWeights: {\n  Light: 300;\n  Regular: 400;\n  Medium: 500;\n  Semibold: 600;\n  Bold: 700;\n}\n\n@boldWeights: {\n  Semibold: 600;\n  Bold: 700;\n}\n\n@monoWeights: {\n  Thin: 200;\n  Light: 300;\n  Medium: 400;\n  Medium: 500;\n  Semibold: 600;\n  Bold: 700;\n  Heavy: 800;\n}\n\n@allWeights: {\n  Thin: 200;\n  Light: 300;\n  Regular: 400;\n  Medium: 500;\n  Semibold: 600;\n  Bold: 700;\n  Heavy: 800;\n  Black: 900;\n}\n\n@tarPT: {\n  nam: 'SF Pro Text';\n  dir: '/Fonts/SF-Pro-Text-';\n  ext: 'woff2';\n}\n\n@tarMo: {\n  nam: 'SF Mono';\n  dir: '/Fonts/SF-Mono-';\n  ext: 'woff2';\n}\n\n@tarCM: {\n  nam: 'SF Compact Text';\n  dir: '/Fonts/SF-Compact-Text-';\n  ext: 'woff2';\n}\n\n@tarCd: {\n  nam: 'SF Pro';\n  dir: '/Fonts/SF-Pro';\n  ext: 'woff2';\n}\n\n@formats: {\n  @ttf: TrueType;\n  @otf: OpenType;\n  @woff: woff;\n  @woff2: woff2;\n}\n\n.load-fonts(@families,\n@tar,\n@weights,\n@unicode,\n@local: false) {\n  each(@families,\n  .(@family, @k1, @i1) {\n    each(@weights, .(@numeric, @weight-key, @i) {\n      each(@styles, .(@style-val, @style, @i2) {\n        // @keyword: extract(@weight, 1);\n        // @numeric: extract(@weight, 2);\n        @font-face {\n          font-family: @family;\n          .use-src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local);\n          unicode-range: @unicode;\n          font-weight: @numeric;\n          font-style: @style;\n          font-display: swap;\n        }\n      }\n\n      )\n    }\n\n    )\n  }\n\n  )\n}\n\n.use-src(@family,\n@tar,\n@repo,\n@weight-key,\n@style-val,\n@numeric,\n@style,\n@local: false) {\n  @nam: @tar[nam];\n  @dir: @tar[dir];\n  @ext: @tar[ext];\n  @format: @formats[@@ext];\n  @italic: if(@style-val='',\n  e(''),\n  ' Italic');\n  src: url('@{repo}@{dir}@{weight-key}@{style-val}.@{ext}') format('@{format}');\n}\n\n.load-local-fonts(@families,\n@tar,\n@weights,\n@unicode,\n@styles,\n@local: false) {\n  each(@families,\n  .(@family,\n  @k1,\n  @i1) {\n    @font-face {\n      font-family: @family;\n      src: local(@family);\n      unicode-range: @unicode;\n      font-display: swap;\n    }\n  }\n\n  )\n}\n\n.load-stretch-fonts(@families,\n@tar,\n@weights,\n@unicode,\n@local: false) {\n  each(@families,\n  .(@family,\n  @k1,\n  @i1) {\n    each(@weights,\n    .(@numeric, @weight-key, @i) {\n      @font-face {\n        font-family: @family;\n        .use-stretch-src(@family, @tar, @repo, @weight-key, '', @numeric, '', @local);\n        unicode-range: @unicode;\n        font-weight: @numeric;\n        font-stretch: condensed;\n        font-display: swap;\n      }\n    }\n\n    )\n  }\n\n  )\n}\n\n.use-stretch-src(@family,\n@tar,\n@repo,\n@weight-key,\n@style-val,\n@numeric,\n@style,\n@local) {\n  @nam: @tar[nam];\n  @dir: @tar[dir];\n  @ext: @tar[ext];\n  @format: @formats[@@ext];\n  src: if(@local,\n  local('@{nam} Condensed @{weight-key}') e(','),\n  ) url('@{repo}@{dir}.@{ext}') format('@{format}');\n}\n\n@generalUnicode: e('U+0000-024F'),\ne('U+02B0-052F'),\ne('U+1DC0-20CF'),\ne('U+2190-22FF'),\ne('U+2460-24FF'),\ne('U+25A0-25FF'),\ne('U+2700-27FF'),\ne('U+2900-2BFF'),\ne('U+2C60-2C7F'),\ne('U+2DE0-2E7F'),\ne('U+3200-32FF'),\ne('U+A640-A69F'),\ne('U+A700-A7FF'),\ne('U+E000-F8FF'),\ne('U+FFF0-FFFF'),\ne('U+F0000-10FFFF');\n@plusUnicode: e('U+0250-02AF'),\ne('U+1D00-1DBF'),\ne('U+2190-22FF');\n@allUnicode: @generalUnicode,\n@plusUnicode;\n@zhUnicode: e('U+4E00-9FFF'),\ne('U+3400-4DBF'),\ne('U+20000-2A6DF'),\ne('U+F900-FAFF'),\ne('U+2F800-2FA1F');\n// e('U+2A700–2B73F, U+2B740–2B81F, U+2B820–2CEAF'),\n\n}",
+    "usercssData": {
+      "name": "github.dev",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "less",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "github.dev",
+    "updateDate": 1668050886768,
+    "_id": "eb2a5332-250f-4103-bedd-fa96f93122aa",
+    "_rev": 1668050886768,
+    "id": 36
+  },
+  {
+    "enabled": true,
+    "installDate": 1653544951281,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Github\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\t  less\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"github.com\") {\n*,\npre,\ncode {\n  // -webkit-font-smoothing: subpixel-antialiased !important;\n  -webkit-font-smoothing: auto; //!important;\n  // -moz-osx-font-smoothing: grayscale !important;\n}\n\n/* Insert code here... */\n.pl-k {\n  font-weight: 800;\n}\n\n.pl-s {\n  font-weight: 800;\n  span {\n    // font-weight: 500;\n  }\n}\n\n.pl-smi,\n.pl-s1 {\n  font-weight: 500;\n}\n\n.pl-en {\n  font-style: italic;\n}\n\ndiv > span[class^=\"pl-\"] {\n  // font-family: SF Mono, monospace;\n}\n}\n\n@-moz-document domain(\"github.com\"),\ndomain(\"github.dev\") {\n// .col-12.d-block.width-full.py-4.border-bottom.color-border-secondary{\nbody {\n  // font-weight: 400;\n  // font-size: 10px;\n  font-family: 'SF Pro Text', -apple-system; // letter-spacing: 0.25px !important;\n  // letter-spacing: 0.02em;\n}\n\n.avatar.avatar-user.width-full {\n  opacity: 0.2;\n}\n\nspan,\n#readme {\n  letter-spacing: 0 !important;\n}\n\n[data-target=\"readme-toc.content\"] {\n  border-top: 0;\n}\n\n.markdown-body h2 {\n  // font-size: 1.15em;\n  // font-weight: 500;\n}\n\n.markdown-body h1 {\n  // font-size: 1.4em;\n}\n\n@media (min-width: 544px) {\n  .SelectMenu-modal {\n    // width: 420px;\n  }\n} // }\n.py-4 {\n  padding-top: 17px !important;\n  padding-bottom: 20px !important;\n}\n\n.d-lg-flex.gutter-lg.mt-4 {\n  .py-4 {\n    padding-top: 14px !important;\n  }\n\n  .mt-2 {\n    margin-top: 0px !important;\n  }\n\n  .py-1 {\n    padding-top: 0px !important;\n    padding-bottom: 0px !important;\n  }\n}\n\n#user-repositories-list {}\n.markdown-body {\n  font-family: \"SF Pro Text\" !important;\n}\n}\n\n@-moz-document domain(\"github.com\") {\n/* Insert code here... */\n.react-code-line-cell,\n.blob-num {\n  font-family: XcodeDigits !important;\n}\n}\n\n@-moz-document domain(\"cs.github.com\") {\n/* Insert code here... */\n.sc-gsDKAQ.iSGLhs {\n  font-family: XcodeDigits !important;\n}\n}",
+    "usercssData": {
+      "name": "Github",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "less",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "Github",
+    "updateDate": 1669766576900,
+    "_id": "5fb20d88-19f1-4d72-9682-8a122b154bd8",
+    "_rev": 1669766576900,
+    "id": 37
+  },
+  {
+    "enabled": true,
+    "installDate": 1658302527676,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "customName": "-fonts-new",
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\t    -fonts-new\n@author\t\t\t  Cascadea User\n@version\t\t  1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document regexp('(https?|chrome-extension):\\\\/\\\\/(?!(localhost|172.16.1.213|136.96.63.25|127.0.0.1|172.16.1._230)).*') {\n// @import url(\"https://cdn.jsdelivr.net/gh/kyle1an/cust-fonts@master/cust-fonts-less.css\");\n// https://purge.jsdelivr.net/gh/kyle1an/cust-fonts/style/fonts/SF-fonts@22.1.min.css\n.load-fonts(@textFamilies, @tarPT, @allWeights, @generalUnicode);\n.load-stretch-fonts(@textFamilies, @tarCd, @allWeights, @generalUnicode, true);\n.load-fonts(@boldFamilies, @tarPT, @boldWeights, @generalUnicode);\n.load-fonts(@monoFamilies, @tarMo, @monoWeights, @allUnicode, true);\n.load-fonts(@compactFamilies, @tarCM, @allWeights, @generalUnicode, true);\n.load-local-fonts(@zhFamilies, @tarCM, @allWeights, @zhUnicode, @styles, true);\n@font-face {\n  font-family: 'XcodeDigits';\n  src: local('Xcode Digits Regular'), url(\"https://cdn.jsdelivr.net/gh/meewill/SF/Fonts/XcodeDigits-regular.ttf\");\n  unicode-range: U+0030-0039;\n  font-weight: 400;\n  font-style: normal; // font-display: swap;\n}\n\n@font-face {\n  font-family: \"empty\";\n  src: url(\"https://cdn.jsdelivr.net/gh/meewill/SF/Fonts/SF-Pro-Text-Regular.woff2\");\n  font-weight: 400;\n  unicode-range: @generalUnicode;\n}\n\n@font-face {\n  font-family: \"empty\";\n  src: url(\"https://cdn.jsdelivr.net/gh/meewill/SF@latest/plus/empty.woff2\");\n  font-weight: 400;\n  unicode-range: e('U+0020'), e('U+00A0'), @zhUnicode;\n}\n\n@zhFamilies: '宋体',\n'微軟正黑體',\n'微软雅黑',\n'Hiragino Sans GB',\n'Microsoft JhengHei',\n'Microsoft Yahei';\n/* Inter\n  Fira Code\n  */\n@textFamilies: 'SF Pro Text',\n'SF Pro Display',\n// Akzidenz,\n// AlibabaPuHuiTi,\n'Arial',\n// 'Arial Unicode MS',\nArimo,\nAvenir,\n'Benton Sans',\n// 'Crisp Noto Sans Regular',\n// Content-font,\n// CustomSansSerif,\n'dosis',\n// font-regular,\nGeneva,\n// gitbook-content-font,\nHelvetica,\n'helvetica Neue',\nHelveticaNeue,\n// HelveticaNowDisplay-Regular,\n// 'Helvetica Neue For Number',\n// 'HelveticaNeue-Medium',\n// 'HelveticaNeue-Bold',\nHind,\n// 'Lantinghei SC',\nlato,\n'Lucida Grande',\nmuli,\n// mwf-segoeui-web,\nNoto,\n'Noto Sans',\n// 'Noto Sans SC',\n// 'Noto Sans TC',\n'Open Sans',\nopensans,\n'PingFang SC',\n'.PingFang SC',\n'PingFangSC',\n// 'PingFang SC Light',\n// 'PingFangSC-Light',\n// 'PingFangSC-Regular',\n// 'PingFangSC-Medium',\n// 'PingFangSC-Semibold',\n'pt sans',\nRoboto,\n// Roboto-Light,\n// Roboto-Regular,\n// Roboto-Medium,\n// sans-serif,\n// 'Segoe UI Web (West European)',\n'Segoe UI',\nSegoeUI,\n// '-apple-system',\n// 'Source Han Sans CN',\n'source sans pro',\n// system-ui,\nTahoma,\n// Times,\n// 'Times New Roman',\n'Trebuchet MS',\n'Ubuntu Light',\nUbuntu,\nVerdana,\n'wf_segoe-ui',\nWhitney,\n// '方正仿宋_gbk',\n// '宋体',\n// '微軟正黑體',\n// '微软雅黑',\n// 'Hiragino Sans GB',\n// 'Microsoft JhengHei',\n'Microsoft Yahei';\n@boldFamilies: 'Arial Black',\nHelveticaNowDisplay-XBd;\n@compactFamilies: 'SF Compact Text',\nMulish;\n@monoFamilies: 'SF Mono',\n'SFMono-Regular',\n'Cascadia Mono-SemiLight',\nConsolas,\nCourier,\n'courier new',\n'DejaVu Sans Mono',\n'Droid Sans Mono',\ndocs-Consolas,\ngitbook-code-font,\nMenlo,\nMeslo,\nMonaco,\n// Monospace,\nmonospaced,\n'Roboto Mono',\n'Source Code Pro',\n'source-code-pro',\n'SourceCodePro',\n'PT Mono',\nUbuntu Mono,\n'Noto Mono';\n/**\n * load-fonts-fn\n */\n@repo: 'https://raw.githubusercontent.com/meewill/SF/main';\n@repo: 'https://cdn.jsdelivr.net/gh/meewill/SF';\n@styles: {\n  normal: '';\n  italic: 'Italic';\n}\n\n@thinWeights: {\n  Thin: 200;\n}\n\n@usualWeights: {\n  Light: 300;\n  Regular: 400;\n  Medium: 500;\n  Semibold: 600;\n  Bold: 700;\n}\n\n@boldWeights: {\n  Semibold: 600;\n  Bold: 700;\n}\n\n@monoWeights: {\n  Thin: 200;\n  Light: 300;\n  Medium: 400;\n  Medium: 500;\n  Semibold: 600;\n  Bold: 700;\n  Heavy: 800;\n}\n\n@allWeights: {\n  Thin: 200;\n  Light: 300;\n  Regular: 400;\n  Medium: 500;\n  Semibold: 600;\n  Bold: 700;\n  Heavy: 800;\n  Black: 900;\n}\n\n@tarPT: {\n  nam: 'SF Pro Text';\n  dir: '/Fonts/SF-Pro-Text-';\n  ext: 'woff2';\n}\n\n@tarMo: {\n  nam: 'SF Mono';\n  dir: '/Fonts/SF-Mono-';\n  ext: 'woff2';\n}\n\n@tarCM: {\n  nam: 'SF Compact Text';\n  dir: '/Fonts/SF-Compact-Text-';\n  ext: 'woff2';\n}\n\n@tarPR: {\n  nam: 'SF Pro Rounded';\n  dir: '/Fonts/SF-Pro-Rounded-';\n  ext: 'otf';\n}\n\n@tarCR: {\n  nam: 'SF Compact Rounded';\n  dir: '/Fonts/SF-Compact-Rounded-';\n  ext: 'otf';\n}\n\n@tarCd: {\n  nam: 'SF Pro';\n  dir: '/Fonts/SF-Pro';\n  ext: 'woff2';\n}\n\n@formats: {\n  @ttf: TrueType;\n  @otf: OpenType;\n  @woff: woff;\n  @woff2: woff2;\n}\n\n.load-fonts(@families,\n@tar,\n@weights,\n@unicode,\n@local: false) {\n  each(@families,\n  .(@family,\n  @k1,\n  @i1) {\n    each(@weights,\n    .(@numeric,\n    @weight-key,\n    @i) {\n      each(@styles,\n      .(@style-val, @style, @i2) {\n        // @keyword: extract(@weight, 1);\n        // @numeric: extract(@weight, 2);\n        @font-face {\n          font-family: @family;\n          .use-src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local);\n          unicode-range: @unicode;\n          font-weight: @numeric;\n          font-style: @style; // font-display: swap;\n        }\n      }\n\n      )\n    }\n\n    )\n  }\n\n  )\n}\n\n.use-src(@family,\n@tar,\n@repo,\n@weight-key,\n@style-val,\n@numeric,\n@style,\n@local) {\n  @nam: @tar[nam];\n  @dir: @tar[dir];\n  @ext: @tar[ext];\n  @format: @formats[@@ext];\n  @italic: if(@style-val='',\n  e(''),\n  ' Italic');\n  src: if(@local,\n  local('@{nam} @{weight-key}@{italic}') e(','),\n  ) url('@{repo}@{dir}@{weight-key}@{style-val}.@{ext}') format('@{format}');\n}\n\n.load-local-fonts(@families,\n@tar,\n@weights,\n@unicode,\n@styles,\n@local: false) {\n  each(@families,\n  .(@family,\n  @k1,\n  @i1) {\n    @font-face {\n      font-family: @family;\n      src: local(@family);\n      unicode-range: @unicode; // font-display: swap;\n    }\n  }\n\n  )\n}\n\n.load-stretch-fonts(@families,\n@tar,\n@weights,\n@unicode,\n@local: false) {\n  each(@families,\n  .(@family,\n  @k1,\n  @i1) {\n    each(@weights,\n    .(@numeric,\n    @weight-key,\n    @i) {\n      @font-face {\n        font-family: @family;\n        .use-stretch-src(@family,\n        @tar,\n        @repo,\n        @weight-key,\n        '',\n        @numeric,\n        '',\n        @local);\n        unicode-range: @unicode;\n        font-weight: @numeric;\n        font-stretch: condensed; // font-display: swap;\n      }\n    }\n\n    )\n  }\n\n  )\n}\n\n.use-stretch-src(@family,\n@tar,\n@repo,\n@weight-key,\n@style-val,\n@numeric,\n@style,\n@local) {\n  @nam: @tar[nam];\n  @dir: @tar[dir];\n  @ext: @tar[ext];\n  @format: @formats[@@ext];\n  src: if(@local,\n  local('@{nam} Condensed @{weight-key}') e(','),\n  ) url('@{repo}@{dir}.@{ext}') format('@{format}');\n}\n\n@generalUnicode: e('U+0000-024F'),\ne('U+02B0-052F'),\ne('U+1DC0-20CF'),\ne('U+2190-22FF'),\ne('U+2460-24FF'),\ne('U+25A0-25FF'),\ne('U+2700-27FF'),\ne('U+2900-2BFF'),\ne('U+2C60-2C7F'),\ne('U+2DE0-2E7F'),\ne('U+3200-32FF'),\ne('U+A640-A69F'),\ne('U+A700-A7FF'),\ne('U+E000-F8FF'),\ne('U+FFF0-FFFF'),\ne('U+F0000-10FFFF');\n@plusUnicode: e('U+0250-02AF'),\ne('U+1D00-1DBF'),\ne('U+2190-22FF');\n@allUnicode: @generalUnicode,\n@plusUnicode;\n@zhUnicode: e('U+4E00-9FFF'),\ne('U+3400-4DBF'),\ne('U+20000-2A6DF'),\ne('U+F900-FAFF'),\ne('U+2F800-2FA1F');\n// e('U+2A700–2B73F, U+2B740–2B81F, U+2B820–2CEAF'),\n\n}",
+    "usercssData": {
+      "name": "-fonts-new",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "-fonts-new",
+    "updateDate": 1670498791453,
+    "_id": "bfc7ca3e-8012-40f0-b6c9-a4188463f726",
+    "_rev": 1670498791453,
+    "id": 38
+  },
+  {
+    "enabled": true,
+    "installDate": 1608828364504,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\t_websites\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document domain(\"deepl.com\") {\n#lmt {\n  &_pro_ad_container,\n  &_quotes_article {\n    display: none;\n  }\n}\n\n#lmt_pro_ad_container_1,\n#lmt_pro_ad_container_2,\n#iosAppAdPortal {\n  display: none;\n}\n\n#dl_menu_logo,\n#dl_menu_translator_simplified,\n#dl_navbar_desktop,\n.dl_header_menu_v2__buttons {\n  opacity: 0.1\n}\n}\n\n@-moz-document domain(\"twitter.com\") {\n.DatePicker-nav {\n  * {\n    /*font-family: -apple-system;*/\n    font-size: 0.95em;\n  }\n}\n\nbody * {\n  font-family: 'SF-Pro-Text-Alt', 'SF Pro Text' !important;\n}\n\nh1,\nh2,\nh3 {\n  font-family: 'SF-Pro-Text-Alt', 'SF Pro Text' !important;\n  * {\n    font-family: 'SF-Pro-Text-Alt', 'SF Pro Text' !important;\n  }\n}\n\nh1[role=\"heading\"] {\n  opacity: 0;\n} // #layers>.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj,\n[class=\"css-1dbjc4n r-1loqt21 r-136ojw6\"],\n.css-1dbjc4n.r-1p6iasa.r-e7q0ms, // .css-1dbjc4n.r-1h3ijdo.r-136ojw6,\n.css-1dbjc4n.r-1niwhzg.r-1gm7m50.r-1867qdf.r-1phboty.r-1yadl64.r-ku1wi2.r-1udh08x,\n[data-testid=\"sidebarColumn\"] .css-1dbjc4n.r-vacyoi.r-ttdzmv > div:last-of-type {\n  display: none !important;\n}\n\n[data-testid=\"sidebarColumn\"] .css-1dbjc4n.r-vacyoi.r-ttdzmv > div:nth-last-child(2) {\n  margin-bottom: 0\n}\n\n.css-1dbjc4n.r-18u37iz.r-1wbh5a2.r-1f6r7vd {\n  opacity: 0.4;\n}\n\n.css-1dbjc4n.r-1iusvr4.r-16y2uox.r-m611by {\n  padding-top: 5px;\n  svg {\n    position: relative;\n    top: 3px;\n  }\n}\n\n.css-1dbjc4n.r-156q2ks,\n.css-1dbjc4n.r-1bs4hfb.r-1867qdf.r-1phboty.r-rs99b7.r-156q2ks.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg {\n  margin-top: 5px;\n}\n\n.css-1dbjc4n.r-1iusvr4.r-16y2uox.r-1w50u8q {\n  padding: 0;\n}\n\n.css-1dbjc4n.r-18u37iz.r-1wtj0ep.r-156q2ks.r-1mdbhws {\n  margin-top: 5px;\n}\n\n.css-1dbjc4n.r-1iusvr4.r-16y2uox.r-1777fci.r-1mi0q7o {\n  padding-bottom: 5px;\n}\n\n.r-1xvli5t {\n  height: 0.9em !important;\n}\n\n.r-1hdv0qi {\n  width: 0.9em !important;\n}\n}\n\n@-moz-document url-prefix(\"https://www.netflix.com/watch\") {\n/* NETFLIX */\n/*  ──----==> Compact <==----── */\n// $compNames='Menlo', 'Netflix Sans', 'SF Compact Text';\n// $compDir='/CompactText/Alt/SF-Compact-Text-';\n// for name in $compNames {\n// \tfor style in $normStyles {\n// \t\t@font-face {\n// \t\t\tfont-family: name;\n// \t\t\t/*local('SF Compact Text '+ style[1]),*/\n// \t\t\tsrc: url($path + $compDir + style[1] + $fileExt);\n// \t\t\tunicode-range: $uR;\n// \t\t\tfont-weight: style[0];\n// \t\t\tfont-style: style[2];\n// \t\t}\n// \t}\n// }\n.player-timedtext-text-container span {\n  font-family: \"SF Pro Text\" !important;\n  font-weight: 600 !important; // text-transform:lowercase;\n  // letter-spacing: 0.5rem;\n  &::first-letter {\n    // font-weight: bold;\n    // color: red;\n  }\n}\n\n.player-timedtext * {\n  // font-family: \"PingFang SC\", \"SF Compact Text\" !important;\n  // font-size: 1.7em !important;\n}\n\n.player-timedtext * {\n  // display: inline-block\n}\n\n.player-timedtext * {\n  text-transform: lowercase; //-moz-font-feature-settings: \"smcp\";\n  // -webkit-font-feature-settings: \"tnum\"  !important;\n  font-feature-settings: \"cv01\", // \"Straight-sided nine\"; 6 9. [six six.tnum] by [six.1 six.1.tnum];\n  \"ss01\"0, //   sub [six nine six.tnum nine.tnum] by [six.1 nine.1 six.1.tnum nine.1.tnum];\n  \"ss02\", // \"Open four\"; 4 \n  \"cv02\"0,\n  \"cv03\", // \"Vertically centered colon\"; : and J\n  \"cv05\", // \"Seriffed Capital I\";\n  \"cv06\", // \"Tailed lowercase l\";\n  \"ss07\"0, // \"One storey a\";\n  \"cv07\"0,\n  \"cv08\", // \"Slashed zero\"; 0 and Chinese\n  \"trad\"0,\n  \"nlck\",\n  \"nalt\"0,\n  \"ital\",\n  \"tnum\"0; // font-feature-settings: \"ss03\" !important;\n  // font-feature-settings: \"dnom\" !important;\n}\n\n.player-timedtext::first-letter {\n  text-transform: uppercase\n}\n\n[data-uia=\"timeline-bar\"].ltr-lbmpgb {\n  height: 1px;\n}\n\n.watch-video--bottom-controls-container.ltr-hpbgml *,\n[data-uia=\"controls-time-remaining\"] *,\ntime.time-remaining__time {\n  // font-family: \"SF Pro Text\" !important;\n  font-variant-numeric: tabular-nums !important;\n}\n\n.nfp .scrubber-container .track {\n  // height: .1em;\n}\n\n#superNFPanel #videoColor {\n  // display: none;\n}\n}\n\n@-moz-document domain(\"discord\") {\n* {\n  font-family: SF Compact Text,\n  Whitney,\n  -apple-system !important;\n}\n}\n\n@-moz-document domain(\"leetcode-cn.com\") {\n.css-mas3hu-ErrorContainer.e1m0ihle0 * {\n  font-family: SF Mono !important; // font-weight: 300 !important;\n}\n\npre {\n  // font-weight: 300 !important;\n}\n\nbody {\n  font-family: \"SF Pro Text\";\n}\n}\n\n@-moz-document domain(\"dropbox.com\") {\nli.top-level-nav-item {\n  display: none !important;\n}\n\ntd.time,\ntd {\n  font-family: SF Pro Text !important;\n  font-variant-numeric: tabular-nums !important;\n}\n\n.dig-GlobalHeader-Logo {\n  opacity: 0.02;\n}\n}\n\n@-moz-document domain(\"outlook.live.com\") {\nbody * {\n  font-family: 'SF Pro Text';\n}\n\ndiv:has(> div > div > [aria-label=\"广告\"]) {\n  display:none;\n}\n\ndiv:has(> div > div > [aria-label=\"advertisement\"]) {\n  display:none;\n}\n}\n\n@-moz-document domain(\"imdb.com\") {\n:root {\n  --ipt-font-family: \"SF Pro Text\";\n}\n\n#wrapper {\n  background-color: black;\n}\n\n/*.sc-kGXeez.gCxiUc.navbar__imdb-tv.sc-gzVnrw.sVyDb.navbar__flyout--breakpoint-l.navbar__flyout--positionLeft,*/\n/*.navbar__imdbpro.sc-dxgOiQ.jFBlcm,*/\n/*#quicklinksMainSection a:nth-of-type(4),*/\n/*#quicklinksMainSection span:nth-of-type(4),*/\n/*#title-social-sharing-widget,*/\n/*#social-share-widget*/\n.article .pro_logo_main_title {\n  display: none !important;\n}\n\n#main_top {\n  #promoted-partner-bar {\n    display: none !important;\n  }\n\n  .pro_logo_main_title {\n    display: none !important;\n  }\n}\n\n/*#sidebar*/\n.ab_ninja,\n#relatedListsWidget,\n/*#relatedEditorialListsWidget,*/\n.ab_message,\n#ratingWidget {\n  display: none !important;\n}\n\n/*\n\t.ab_ninja, #relatedListsWidget, #relatedEditorialListsWidget, .ab_message, #ratingWidget, .mini-article.poll-widget-rhs,#sidebar div:nth-of-type(10) {\n\t    display: none;\n\t}\n\t\n\t\n\t\n\t/*\n\tdiv#ratingWidget, .ab_ninja, .ipl-simple-list, .ab_message, #sidebar div.mini-article:nth-last-of-type(2),span:nth-child(0n+1)*/\n/*.lister-item-year.text-muted.unbold*/\n.mode {\n  &-simple {\n    .lister-item-header {\n      span:nth-child(2) {\n        span:nth-child(2) {\n          /*display: none;*/\n          color: #eee;\n        }\n      }\n    }\n  }\n\n  &-advanced {\n    .lister-item-header {\n      span:nth-child(3) {\n        /*display: none;*/\n        color: #eee;\n      }\n    }\n  }\n}\n}\n\n@-moz-document domain(\"wikipedia.org\"),\ndomain(\"wiktionary\"),\ndomain(\"wiki\") {\n.diff-context,\n.diff-deletedline,\n.diff-addedline,\ncode, // [class～='code'],\n[style*=\"Monospace\"],\npre,\ntt {\n  font-family: SF Mono,\n  Monospace !important;\n}\n\n[style*=\"sans-serif\"] {\n  font-family: SF Pro Text,\n  -apple-system !important;\n}\n\ntr td {\n  font-variant-numeric: tabular-nums !important;\n}\n}\n\n@-moz-document domain(\"pincong.rocks\") {\n.aw-content-wrap.clearfix {\n  background: none;\n  background-color: white !important;\n}\n}\n\n@-moz-document domain(\"quora.com\") {\nbody {\n  font-family: \"SF Pro Text\";\n}\n}\n\n@-moz-document domain(\"segmentfault.com\") {\n.row {\n  font-family: \"SF Pro Text\";\n}\n\n.right-block .card-body {\n  opacity: 0.2\n}\n}\n\n@-moz-document domain(\"instagram.com\") {\n._lz6s.Hz2lF {\n  position: absolute !important;\n  top: -54px !important\n}\n}\n\n@-moz-document domain(\"goodreads.com\") {\n.bookMeta th {\n  // font-size:10px;\n  letter-spacing: -0.1em;\n}\n\n.readerQAFormContainer.js-readerQAForm {\n  display: none;\n}\n}\n\n@-moz-document domain(\"livebook.manning.com\") {\n.inline-promo-container.add-to-cart-inline-promo.ebook-inline-promo,\n.inline-promo-container {\n  display: none !important;\n}\n\n#header.fixed {\n  position: absolute !important;\n}\n}\n\n@-moz-document domain(\"wiley.com\") {\n.main-sticky-header.affix .main-navigation-search {\n  display: none !important;\n}\n}\n\n@-moz-document domain(\"genius.com\") {\napple-music-player {\n  display: none;\n}\n}\n\n@-moz-document domain(\"developer.mozilla.org\"),\ndomain(\"api.jquery.com\") {\np :not(code) {\n  letter-spacing: .15px;\n}\n\ndiv :not(pre) {\n  // letter-spacing: .15px;\n}\n}",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "_websites",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "_websites",
+    "updateDate": 1669214968014,
+    "_id": "cdfb9b6a-2e74-4e9e-9ed8-549c1af27b9b",
+    "_rev": 1669214968014,
+    "customName": "-websites",
+    "id": 39
+  },
+  {
+    "enabled": true,
+    "installDate": 1665379350802,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           notion.so\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n@preprocessor\tless\n==/UserStyle== */\n\n@-moz-document domain(\"notion.so\") {\n[style*='-apple-system'] {\n\tfont-family: \"SF Pro Text\";\n}\n\n[style*='iawriter-mono'] {\n\tfont-family: \"SF Mono\";\n}\n \n\n\n}",
+    "usercssData": {
+      "name": "notion.so",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me",
+      "preprocessor": "less"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "notion.so",
+    "updateDate": 1665379350802,
+    "_id": "444bc7e9-a330-42c6-b0a8-2bce16df5eb9",
+    "_rev": 1666143200928,
+    "id": 40
+  },
+  {
+    "enabled": true,
+    "installDate": 1611066544323,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tGoogle\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document url-prefix(\"https://www.google.com/\") {\n[href^=\"https://store.google.com/\"] {\n\tdisplay: none !important;\n}\n}\n\n@-moz-document regexp(\"^(https:\\\\/\\\\/|http:\\\\/\\\\/)?(www.)?google\\\\.com\\\\/.+\") {\n[src=\"/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png\"],\nsvg.TYpZOd {\n\topacity: 0 !important;\n}\n\n.LC20lb.MBeuO.DKV0Md,\n// .iUh30.qLRx3b.tjvcx,\n#TestTest {\n\t// font-size:1.75rem;\n\t// font-stretch: condensed;\n}\n.iUh30.qLRx3b.tjvcx,\n#TestTest {\n\t// font-size:1rem;\n\t// font-stretch: condensed;\n}\n.sfbg {\n\tborder-bottom: 0;\n\t-webkit-backdrop-filter: saturate(180%) blur(20px) !important;\n\tbackdrop-filter: saturate(180%) blur(20px) !important;\n\tbackdrop-filter: blur(20px) !important;\n\tbackground-color: rgba(255, 255, 255, 0.62) !important;\n}\n\n[aria-label=\"Ads\"],\n.JolIg.mfMhoc,\n.YfftMc,\n.ads-ad,\n#fbar > div:nth-of-type(2), // #result-stats,\n.AuP6le.VTZT1b.kno-ftr,\n/*Feedback*/\n.OwRFvb.kno-fb,\n.JUypV {\n\tdisplay: none !important;\n} //search box\n.logo + div *,\n.gLFyf {\n\tfont-size: 14px;\n}\n\n#center_col {\n\t#res {\n\t\tzoom: 0.8\n\t}\n}\n\n#center_col {\n\t#botstuff {\n\t\tzoom: 0.75\n\t}\n}\n\n/*\n\t.fbar {\n\t\tvisibility: hidden;\n\t\theight: 0;\n\t}\n\t\n\t/*\n\t#searchform {\n\t\tposition: absolute !important;\n\t}*/\n/*.fl.iUh30 {*/\n/*\tmargin-left: 6px;*/\n/*}*/\n// #REsRA,\n// h3.LC20lb.DKV0Md {\n// \tletter-spacing: 0.04em;\n// \tfont-family: \"SF Pro\";\n// }\n/* buttom */\n.f6F9Be.TrMVnc,\n.f6F9Be {\n\tpadding: 0 !important;\n}\n\n$prefix-path-r='https://raw.githubusercontent.com/kyle1an/SF-1/main'; // $prefix-path-r='https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main';\n// $prefix-path-c='https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master';\n// @formatter:off\n$uni-gen=(U+0000-024F),\n(U+02B0-052F),\n(U+1DC0-20CF),\n(U+2190-22FF),\n(U+2460-24FF),\n(U+25A0-25FF),\n(U+2700-27FF),\n(U+2900-2BFF),\n(U+2C60-2C7F),\n(U+2DE0-2E7F),\n(U+3200-32FF),\n(U+A640-A69F),\n(U+A700-A7FF),\n(U+E000-F8FF),\n(U+FFF0-FFFF),\n(U+F0000-10FFFF);\n$uni---4=(U+0250-02AF),\n(U+1D00-1DBF),\n(U+2190-22FF); // @formatter:on\n$font-weights=200 Thin,\n300 Light,\n400 Regular,\n500 Medium,\n600 Semibold,\n700 Bold;\n$SF-Mono-weights=300 Light,\n400 Regular,\n500 Medium,\n600 Semibold,\n700 Bold;\n$mono-uni=$uni-gen,\n$uni---4;\n$SF-Mono='SF Mono',\n'SFMono-Regular',\n'Cascadia Mono-SemiLight',\nConsolas,\n'courier new',\n'DejaVu Sans Mono',\nMenlo,\nMeslo,\nMonaco,\nMonospace,\nmonospaced,\n'Roboto Mono',\n'Source Code Pro',\n'source-code-pro',\n'SourceCodePro',\n'PT Mono',\nUbuntu Mono;\n$SF-Pro-Text='SF Pro Text',\n'SF Pro Display',\nAkzidenz,\nAlibabaPuHuiTi,\narial,\n'Arial Unicode MS',\nArimo,\nAvenir,\n'Benton Sans',\n'Crisp Noto Sans Regular',\nContent-font,\nCustomSansSerif,\n'dosis',\nfont-regular,\nGeneva,\nHelvetica,\n'Helvetica Neue',\nHelveticaNeue,\nHelveticaNowDisplay-Regular,\n'Helvetica Neue For Number',\n'HelveticaNeue-Medium',\n'HelveticaNeue-Bold',\nHind,\n'Hiragino Sans GB',\niconfont,\n'Inter',\n'Lantinghei SC',\nlato,\n'Lucida Grande',\n'Microsoft JhengHei',\n'Microsoft Yahei',\nmuli,\nmwf-segoeui-web,\nNoto,\n'Noto Sans',\n'Noto Sans SC',\n'Noto Sans TC',\n'Open Sans',\nopensans,\n'PingFang SC',\n'.PingFang SC',\n'PingFangSC',\n'PingFang SC Light',\n'PingFangSC-Light',\n'PingFangSC-Regular',\n'PingFangSC-Medium',\n'PingFangSC-Semibold',\n'PingFang SC',\n'pt sans',\nRoboto,\nRoboto-Light,\nRoboto-Regular,\nRoboto-Medium,\nsans-serif,\n'Segoe UI Web (West European)',\n'Segoe UI',\nSegoeUI,\n'-apple-system',\n'Source Han Sans CN',\n'source sans pro',\nsystem-ui,\nTahoma,\n'Times New Roman',\n'Trebuchet MS',\n'Ubuntu Light',\nUbuntu,\nVerdana,\n'wf_segoe-ui',\nWhitney,\n'微軟正黑體',\n'微软雅黑',\n'方正仿宋_gbk',\n'宋体';\n$SF-Pro_bold='Arial Black',\nHelveticaNowDisplay-XBd;\n$SF-Compact='SF Compact Text',\nMulish;\n$bold-weights=600 Semibold,\n700 Bold;\nfont-import(families, dir, unicode-range=$uni-gen, font-weights=$font-weights, prefix-path=$prefix-path-r, fn) {\n\tfor font-name in families {\n\t\tfor weight in font-weights {\n\t\t\tfor style in '''Italic' {\n\t\t\t\t@font-face {\n\t\t\t\t\tfont-family: font-name;\n\t\t\t\t\tsrc: fn(prefix-path, dir, weight, style);\n\t\t\t\t\tunicode-range: unicode-range;\n\t\t\t\t\tfont-weight: weight[0];\n\t\t\t\t\tfont-style: style==''? normal: italic;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n\nsrc_url(prefix-path, dir, weight, i) {\n\turl(prefix-path + dir + weight + i + '.otf');\n}\n}\n\n@-moz-document domain(\"drive.google.com\") {\n.gb_lc {\n\topacity: 0 !important;\n}\n\nc-wiz.bwAv4d,\n[guidedhelpid=\"recent_nav\"] {\n\tdisplay: none !important;\n}\n\n/*.a-da-Mf-B::before {\n\t\theight: 15px !important;\n\t}\n\t*/\n.a-dkl3Ye .a-da-Mf-B::before {\n\tcontent: '';\n\tdisplay: inline-block;\n\t-webkit-box-flex: 0 0 13px !important;\n\t-webkit-flex: 0 0 13px !important;\n\tflex: 0 0 13px !important;\n}\n\n.USrqEe-ml-Pr-qc-j.ub-ml-Pr::before,\n.ml-Pr-kg {\n\tmargin: 0 !important;\n}\n}\n\n@-moz-document domain(\"www.google.com\"),\ndomain(\"duckduckgo.com\"),\ndomain(\"baidu.com\"),\ndomain(\"startpage.com\") {\n// @font-face {\n//     font-family: \"SF UI\";\n//     font-weight: 400;\n//     src: url(\"https://sf.abarba.me/SF-UI-Text-Regular.otf\");\n// }\nbutton {\n\t&.ghhider {\n\t\t/*font-family: -apple-system, SF UI !important;*/\n\t\t/*font-weight: 300;*/\n\t\tborder: 0;\n\t\tpadding-left: 8px;\n\t\tpadding-right: 8px;\n\t\tbackground-color: white;\n\t\topacity: 0.618;\n\t\tcolor: white;\n\t\t&.ghhb {\n\t\t\t/*font-family: -apple-system, SF UI !important;*/\n\t\t\t/*font-weight: 300;*/\n\t\t\tborder: 0;\n\t\t\tpadding-left: 8px;\n\t\t\tpadding-right: 8px;\n\t\t\tbackground-color: white;\n\t\t\topacity: 0.618;\n\t\t}\n\n\t\t&.unbtn {\n\t\t\tfont-family: -apple-system;\n\t\t\tfont-size: 13px !important;\n\t\t\t/*top: 152.7px !important;*/\n\t\t\t/*top: 86px !important;*/\n\t\t\ttop: 70px !important;\n\t\t\t/*right: 381px !important;*/\n\t\t\tright: 10px !important;\n\t\t\tborder: 0;\n\t\t\tcolor: rgb(95, 99, 104) !important;\n\t\t\tbackground-color: white;\n\t\t\ttext-decoration: none;\n\t\t\tborder: 1px solid transparent;\n\t\t\tdisplay: inline-block;\n\t\t\ttext-align: center;\n\t\t\tborder-radius: 2px;\n\t\t\tline-height: 19px;\n\t\t\tcursor: pointer;\n\t\t\tmargin-left: -1px;\n\t\t\tpadding: 4px 11px;\n\t\t\t&:hover {\n\t\t\t\t/*background-color: #f8f8f8;*/\n\t\t\t\t/*background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));*/\n\t\t\t\t/*background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);*/\n\t\t\t\t/*background-image: linear-gradient(top, #f8f8f8, #f1f1f1);*/\n\t\t\t\t/*border: 1px solid #c6c6c6;*/\n\t\t\t\t/*color: #222;*/\n\t\t\t}\n\n\t\t\t&:active {\n\t\t\t\tcolor: #5f6368;\n\t\t\t\tbackground: -webkit-linear-gradient(top, #eee, #e0e0e0);\n\t\t\t\t-webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n\t\t\t\tborder: 1px solid #d7d7d7;\n\t\t\t\tbox-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n\t\t\t}\n\t\t}\n\t}\n}\n\n/*button.ghhider.unbtn:active {*/\n/*\tbackground-color: #f6f6f6;*/\n/*\tbackground-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#f1f1f1));*/\n/*\tbackground-image: -webkit-linear-gradient(top, #f6f6f6, #f1f1f1);*/\n/*\tbackground-image: linear-gradient(top, #f6f6f6, #f1f1f1);*/\n/*\t-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);*/\n/*\tbox-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);*/\n/*}*/\n.action-menu {\n\topacity: 0.05;\n\t&:hover {\n\t\topacity: 0.618;\n\t\tbackground-color: #f8f8f8;\n\t\tbackground-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));\n\t\tbackground-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);\n\t\tbackground-image: linear-gradient(top, #f8f8f8, #f1f1f1);\n\t\tborder: 1px solid #c6c6c6;\n\t\tborder-radius: 5px;\n\t\tcolor: #222;\n\t\tpadding-right: 6px;\n\t}\n}\n\n.fl.iUh30 {\n\topacity: 0.05;\n\t&:hover {\n\t\topacity: 0.618;\n\t\tbackground-color: #f8f8f8;\n\t\tbackground-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));\n\t\tbackground-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);\n\t\tbackground-image: linear-gradient(top, #f8f8f8, #f1f1f1);\n\t\tborder: 1px solid #c6c6c6;\n\t\tborder-radius: 5px;\n\t\tcolor: #222;\n\t\tpadding-right: 6px;\n\t\tpadding-left: 6px;\n\t}\n}\n\n/*button.ghhider.unbtn:hover {*/\n/*\t-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/\n/*\tbox-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/\n/*\t-webkit-transition: all 0.0s;*/\n/*\ttransition: all 0.0s;*/\n/*}*/\ndiv.g.ghh1time {\n\tbackground-color: white !important;\n}\n\n/*.r :not(.ghhider.ghhb)*/\n/*.TbwUpd.NJjxre :not(button){*/\n/*\tpointer-events: none !important;*/\n/*}*/\n\n}\n\n@-moz-document domain(\"colab.research.google.com\") {\nhtml {\n\t--colab-code-font-family: SF Mono;\n}\n}",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "Google",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "Google",
+    "updateDate": 1667193759457,
+    "_id": "40f84e75-2848-4451-aa0c-b3f2072d3c2d",
+    "_rev": 1667193759457,
+    "id": 41
+  },
+  {
+    "enabled": true,
+    "installDate": 1665226452898,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           youtube.com - 10/8/2022, 6:53:36 PM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document domain(\"youtube.com\") {\n\n.lln-vertical-view.lln-events-added,\n.lln-vertical-view-tabs {\n\tborder-top-left-radius: 6px;\n\tborder-top-right-radius: 6px;\n}\n\n\n\n\n/* Insert code here... */\n.lln-whole-title-translation-wrap:nth-of-type(2) {\n\t/* \tdisplay: none; */\n}\n\n#primary {\n\tmargin-left: 0 !important;\n}\n\n#below {\n\tmargin-left: var(--ytd-margin-6x);\n}\n\n\n\n\n#logo {\n\topacity: 0.38;\n}\n\n:root {\n\t--paper-font-subhead_-_font-family: 'SF Pro Text';\n}\n\nbody * {\n\tfont-family: \"SF Pro Text\" !important;\n} // #primary-inner {\n// \t#top-level-buttons>ytd-toggle-button-renderer:first-child {\n// \t\t[class=\"style-scope yt-icon-button\"] {\n// \t\t\t&:before {\n// \t\t\t\tcontent: \"􀊀\";\n// \t\t\t\tfont-size: 22px;\n// \t\t\t\tfont-family: \"SF Pro Text\";\n// \t\t\t}\n// \t\t\tyt-icon {\n// \t\t\t\tdisplay: none;\n// \t\t\t}\n// \t\t}\n// \t}\n// \t#top-level-buttons>ytd-toggle-button-renderer:nth-child(2) {\n// \t\t[class=\"style-scope yt-icon-button\"] {\n// \t\t\t&:before {\n// \t\t\t\tcontent: \"􀊂\";\n// \t\t\t\tfont-size: 22px;\n// \t\t\t\tfont-family: \"SF Pro Text\";\n// \t\t\t\tposition: relative;\n// \t\t\t\ttop: 1.5px;\n// \t\t\t}\n// \t\t\tyt-icon {\n// \t\t\t\tdisplay: none;\n// \t\t\t}\n// \t\t}\n// \t}\n// \t#top-level-buttons>ytd-button-renderer:nth-child(3) {\n// \t\t[class=\"style-scope yt-icon-button\"] {\n// \t\t\t&:before {\n// \t\t\t\tcontent: \"􀉑\";\n// \t\t\t\tfont-size: 17px;\n// \t\t\t\tfont-family: \"SF Pro Text\";\n// \t\t\t}\n// \t\t\tyt-icon {\n// \t\t\t\tdisplay: none;\n// \t\t\t}\n// \t\t}\n// \t}\n// \t#top-level-buttons>ytd-button-renderer:nth-child(4) {\n// \t\t[class=\"style-scope yt-icon-button\"] {\n// \t\t\t&:before {\n// \t\t\t\tcontent: \"􀋸\";\n// \t\t\t\tfont-size: 17px;\n// \t\t\t\tfont-family: \"SF Pro Text\";\n// \t\t\t\tposition: relative;\n// \t\t\t\ttop: 1.5px;\n// \t\t\t}\n// \t\t\tyt-icon {\n// \t\t\t\tdisplay: none;\n// \t\t\t}\n// \t\t}\n// \t}\n// \tyt-icon-button.ytd-toggle-button-renderer {\n// \t\tpadding: 0;\n// \t}\n// \t#toolbar {\n// \t\t#like-button {\n// \t\t\t[class=\"style-scope yt-icon-button\"] {\n// \t\t\t\t&:before {\n// \t\t\t\t\tcontent: \"􀊀\";\n// \t\t\t\t\tfont-size: 14px;\n// \t\t\t\t\tfont-family: \"SF Pro Text\";\n// \t\t\t\t}\n// \t\t\t\tyt-icon {\n// \t\t\t\t\tdisplay: none;\n// \t\t\t\t}\n// \t\t\t}\n// \t\t}\n// \t\t#dislike-button {\n// \t\t\t[class=\"style-scope yt-icon-button\"] {\n// \t\t\t\t&:before {\n// \t\t\t\t\tcontent: \"􀊂\";\n// \t\t\t\t\tfont-size: 14px !important;\n// \t\t\t\t\tfont-family: \"SF Pro Text\";\n// \t\t\t\t}\n// \t\t\t\tyt-icon {\n// \t\t\t\t\tdisplay: none;\n// \t\t\t\t}\n// \t\t\t}\n// \t\t}\n// \t}\n// }\n#simple-box,\n[title=\"Home\"],\n[title=\"Your videos\"],\n[title=\"Your movies\"],\n[title=\"Purchases\"],\n[title=\"Help\"],\n[title=\"Send feedback\"],\n[title=\"Report history\"],\ndiv#footer {\n\tdisplay: none !important;\n}\n\n.style-scope {\n\t&.ytd {\n\n\t\t&-comments-header-renderer *,\n\t\t&-masthead {\n\t\t\tytd-topbar-menu-button-renderer:nth-child(1) {\n\t\t\t\tdisplay: none !important;\n\t\t\t}\n\t\t}\n\t}\n}\n\nh1,\nh2,\nh3 {\n\tfont-family: SF Pro Text, -apple-system !important;\n\n\t* {\n\t\tfont-family: SF Pro Text, -apple-system !important;\n\t}\n}\n\n.ytp {\n\t&-prev-button.ytp-button {\n\t\torder: 1;\n\t}\n\n\t&-play-button.ytp-button {\n\t\torder: 2;\n\t}\n\n\t&-next-button.ytp-button {\n\t\torder: 4;\n\t}\n\n\t&-volume-area {\n\t\torder: 5;\n\t}\n\n\t&-time-display.notranslate {\n\t\torder: 3; // min-width: 70px;\n\t\tmax-width: 100px;\n\t\tfont-variant-numeric: tabular-nums !important;\n\n\t\t* {\n\t\t\tfont-family: SF Pro Text, -apple-system !important;\n\t\t}\n\t}\n\n\t&-chapter-container {\n\t\torder: 6;\n\t}\n\n\t&-caption-segment {\n\t\t// font-family: SF Compact Text !important;\n\t\tfont-weight: 400;\n\t\tletter-spacing: -0.01em;\n\t\tbackground-color: rgba(0, 0, 0, 0) !important;\n\t}\n}\n\n.ytp-airplay-button.ytp-button {\n\tdisplay: none;\n}\n\n.cue-group-start-offset,\n.html5-video-info-panel-content {\n\tfont-family: SF Compact Text, -apple-system !important;\n\tfont-variant-numeric: tabular-nums;\n}\n\nytd {\n\t&-thumbnail.ytd-rich-grid-media:before {\n\t\tbackground-color: rgba(0, 0, 0, 0) !important;\n\t}\n\n\t&-comments-header-renderer.style-scope.ytd-item-section-renderer {\n\t\tmargin-bottom: 0;\n\t}\n}\n\n:root {\n\t--pd_r: 10px;\n}\n\n#meta.style-scope.ytd-rich-grid-media {\n\tpadding-right: var(--pd_r) !important;\n}\n\n#related,\n#items.style-scope.ytd-watch-next-secondary-results-renderer {\n\twidth: 422px !important;\n}\n\n/*Subtitle Drop Shadow*/\n.caption {\n\t&-visual-line {\n\n\t\t/*-webkit-backdrop-filter: saturate(180%) blur(20px) !important;*/\n\t\t/*backdrop-filter: saturate(180%) blur(20px) !important;*/\n\t\t/*background-color: rgba(255, 255, 255, 0.62) !important;*/\n\t\tspan {\n\t\t\topacity: 0.62;\n\t\t}\n\t}\n\n\t&-window {\n\t\t&.ytp-caption-window-bottom {\n\t\t\tmargin-bottom: 19.1% !important;\n\t\t} // \t\t\t.captions-text span {\n\t\t// \t\t\t\tfont-family: \"SF Compact Text\" !important;\n\t\t// \t\t\t}\n\t\t#related {\n\t\t\tfont-family: \"SF Compact Text\" !important;\n\t\t}\n\t}\n}\n\n#secondary #related {}\n\n\n\n\n\n}",
+    "usercssData": {
+      "name": "youtube.com - 10/8/2022, 6:53:36 PM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me",
+      "preprocessor": "stylus"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "youtube.com - 10/8/2022, 6:53:36 PM",
+    "updateDate": 1666920190285,
+    "_id": "15345684-2e12-406a-9159-f65349b353dd",
+    "_rev": 1666920190285,
+    "customName": "YouTube",
+    "id": 42
+  },
+  {
+    "enabled": true,
+    "installDate": 1609752359944,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tv2ex_ext\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document domain(\"v2ex.com\") {\n[id^=\"parsed-reply\"] img {\n  width: 100%;\n}\n\n#showTopic {\n  border-top: 1px solid var(--box-border-color);\n}\n\na.node:active,\na.node:link,\na.node:visited {\n  padding: 4.8px 6px;\n}\n\n.node-header > .page-content-header {\n  background-color: #FFFFFF;\n} // \n#Top {\n  box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0, rgba(0, 0, 0, 0.05) 0 1px 4px 0, rgba(0, 0, 0, 0.05) 0 2px 8px 0;\n  position: relative;\n  z-index: 9;\n  border-bottom: 0 !important;\n}\n\n#SecondaryTabs {\n  background-image: linear-gradient(to right, #fff 0%, #f9f9f9 10%, #f9f9f9 30%, #fff 100%);\n  border-bottom: 0;\n}\n\n#Wrapper {\n  background-color: white !important;\n  background-image: none !important;\n  background: white;\n  border-left: 1px solid #e2e2e2;\n}\n\n.count_livid {\n  padding: 9 + 7px 2px 9 + 7px 2px !important; // width: 40 +4px;\n}\n\n#Rightbar {\n  * {\n    border-radius: 0;\n  }\n\n  > div:nth-child(2) {\n    border-radius: 3px 3px 0 0 !important;\n  }\n\n  > div:nth-last-child(2) {\n    border-radius: 0 0 3px 3px !important;\n  }\n}\n\n.header {\n  overflow: visible;\n  position: relative;\n  padding-top: 12.5px;\n}\n\n.tag {\n  border-radius: 3px !important;\n  border: 1px solid rgb(187, 192, 196);\n  color: rgb(60, 65, 70);\n  font-size: 12px;\n}\n\n.node {\n  font-size: 12px !important;\n}\n\n#Main {\n  * {\n    box-shadow: none !important;\n  }\n\n  .header > small.gray:nth-last-child(1) {\n    position: relative;\n    left: -7px;\n  }\n\n  > div:nth-child(2) .header + .cell {\n    border-top-width: 0;\n  }\n\n  > div:nth-child(2),\n  > .box:nth-child(4) {\n    box-shadow: none;\n    border-bottom: none;\n  }\n\n  [style=\"border-bottom: 0px;\"] {\n    margin-left: 24px;\n  }\n\n  > div:nth-last-child(1) {\n    border-bottom: 0;\n  }\n}\n\n.header {\n  .gray {\n    // font-size: 0;\n    position: relative;\n    left: -7px;\n    span {\n      font-size: 13px;\n    }\n  }\n}\n\n#topic_thank {\n  position: relative;\n  float: right;\n  .topic_thanked {\n    padding-right: 15px;\n  }\n\n  a a {\n    padding-left: 5px;\n  }\n}\n\n.topic_buttons {\n  box-shadow: none !important;\n  background: white;\n  border-radius: 0;\n  margin-left: $postL;\n  * {\n    color: #848d95 !important;\n  }\n\n  a {\n    &:nth-child(3),\n    &:nth-child(4),\n    &:nth-child(5) {\n      display: none;\n    }\n\n    &:nth-child(7) {\n      position: relative;\n      float: right;\n    }\n  }\n}\n\n.topic_content p img {\n  max-width: 38% !important;\n}\n\n.cell.page-content-header {\n  border-radius: 0;\n} //══════════════════════════════════════════════════════════════════════════════\n// Global\n//══════════════════════════════════════════════════════════════════════════════\n.avatar {\n  border-radius: 7% !important;\n}\n\na.topic-link:visited {\n  color: #609 !important;\n}\n\n#Logo {\n  opacity: 0;\n}\n\nbody *,\nbody {\n  // -webkit-font-smoothing: antialiased !important;\n  // -webkit-font-smoothing: subpixel-antialiased !important;\n  // font-smooth: 1em !important;\n  // -moz-osx-font-smoothing: grayscale !important;\n} //══════════════════════════════════════════════════════════════════════════════\n// list\n//══════════════════════════════════════════════════════════════════════════════\n.topic-link:link {\n  color: rgb(0, 119, 204) !important;\n}\n\n.node {\n  background-color: #e1ecf4 !important;\n  color: #39739d !important;\n} //══════════════════════════════════════════════════════════════════════════════\n// Post\n//══════════════════════════════════════════════════════════════════════════════\n//══════════════════════════════════════════════════════════════════════════════\n// profile\n//══════════════════════════════════════════════════════════════════════════════\n//══════════════════════════════════════════════════════════════════════════════\n// w/ ext\n//══════════════════════════════════════════════════════════════════════════════\n.dark {\n  [color=\"green\"] {\n    letter-spacing: -5.5px;\n    color: transparent;\n    &:before {\n      // content: \"􀑫\";\n      font-family: Pro, \"SF Pro Text\";\n      color: #24a0ed !important;\n    }\n  }\n}\n\n#Main {\n  [style=\"border-bottom: 0px;\"] {\n    > [class=\"cell\"] {\n      padding-bottom: 0;\n      border-bottom: 0;\n      + div {\n        border-top: 1px solid #e2e2e2;\n      }\n\n      + .topic_buttons {\n        margin-top: 10px !important;\n      }\n    }\n  }\n}\n\nspan.replyDetailBTN,\n.direct {\n  position: relative;\n  z-index: 9;\n}\n\n.previewWindow {\n  padding: 12px 5px 0px 67 + 51px !important;\n}\n\n.reply_content.waitForFold {\n  margin-bottom: 0;\n}\n\n#closeReply {\n  z-index: 10;\n} //══════════════════════════════════════════════════════════════════════════════\n// w/ ext select reply\n.box.v2Box {\n  /* selecting half or more items. Up to 6 */\n  table:nth-child(n+1):nth-last-child(-n+2),\n  table:nth-child(n+2):nth-last-child(-n+4),\n  table:nth-child(n+4):nth-last-child(-n+8) {\n    display: none;\n  }\n}\n}\n\n@-moz-document regexp(\".*\\\\.v2ex.com\\\\/t\\\\/.*\") {\n// reply\n[id^=\"r_\"] {\n  // border-bottom-color: #eff0f1;\n  // border-bottom: 0;\n  // border-top: 1px solid #eff0f1;\n  position: relative; // \t.thank_area {\n  // \t\t* {\n  // \t\t\tfont-size: 14px !important;\n  // \t\t}\n  // \t\t[onclick*=\"ignoreReply\"] {\n  // \t\t\tpadding: 1.5px 0 0 10px;\n  // \t\t}\n  // \t}\n  .fade:before {\n    color: #ccc;\n  }\n\n  $avt_just=-1px;\n  $line_just=16px; // &::before {\n  // \tcontent: \" \";\n  // \tdisplay: block;\n  // \tposition: absolute;\n  // \ttop: 0;\n  // \tbottom: 0;\n  // \tleft: 22.5px + $line_just + $avt_just;\n  // \twidth: 2px;\n  // \theight: 100%;\n  // \tborder-radius: 8px;\n  // \tbackground: #EDEFF1;\n  // \tz-index: 7;\n  // }\n  [id^=\"r_\"] {\n    &::before {\n      left: 22.5px - 15px + $line_just + $avt_just;\n    }\n\n    tr td:first-child:before {\n      left: 4px - 15px + $line_just + $avt_just !important;\n    }\n  }\n\n  tr td {\n    &:first-child {}\n    &:nth-child(3) {\n      .sep3,\n      .sep5 {\n        height: 0;\n      }\n    }\n\n    .embedded_image {\n      max-width: 38%;\n    }\n  }\n\n  .reply_content {\n    padding-right: 17px;\n    img {\n      max-width: 38% !important;\n    }\n  }\n}\n\n[id^=\"r_\"] {\n  [id^=\"r_\"] {\n    padding-top: 0;\n    padding-left: 0;\n    margin-left: 39px;\n    border-top: 1px solid #eff0f1;\n    tr {\n      td:first-child {\n        width: 18px;\n      }\n    }\n\n    .fade {\n      font-size: 14px;\n      width: 0;\n      color: red;\n      &:before {\n        color: #ccc;\n      }\n    }\n\n    td:nth-of-type(2) {\n      width: 7px;\n    }\n\n    [id^=\"r_\"] {\n      margin-left: 23px;\n    }\n  }\n}\n}",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "v2ex_ext",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "v2ex_ext",
+    "updateDate": 1668388330776,
+    "_id": "8de03d97-c44a-4bcb-a4d0-68bf666d3c3f",
+    "_rev": 1668388330776,
+    "customName": "v2ex-ext",
+    "id": 43
+  },
+  {
+    "enabled": true,
+    "installDate": 1631327877497,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "customName": "v2ex-",
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tv2ex_\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tstylus\n==/UserStyle== */\n@-moz-document domain(\"v2ex.com\") {\n/* ads */\n// .box:has([href=\"/advertise\"]),\n.sidebar_compliance,\n.wwads-cn,\n.wwads-vertical,\n[href^=\"https://cdn.v2ex.com/assets/sidebar/\"],\n.sidebar_units:has(>a [src*=\"//cdn.v2ex.com/assets/sidebar/\"]),\n[href^=\"http://click.aliyun.com\"] {\n  display: none !important;\n}\n\n.sep20:nth-child(5),\n#Rightbar .box:nth-child(4) .inner {\n  display: initial;\n}\n}\n\n@-moz-document domain(\"v2ex.com\") {\n:root {\n  --monospace-font: 'SF Mono', ui-monospace, monospace;\n  --xcode: XcodeDigits;\n  --compact: 'SF Compact Text', 'SF Pro Text', -apple-system, sans-serif;\n  --compact-rounded: 'SF Compact Rounded', 'SF Pro Text', -apple-system, sans-serif;\n  --pro-text: 'SF Pro Text', -apple-system, sans-serif;\n}\n\n.pass {\n  display: none;\n}\n\n// /* Global */\n// @font-face {\n//   font-family: \"WTFont\";\n//   src: url(\"https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main/test7/SF-Pro-Text-Regular.otf\");\n// }\nh1 {\n  font-size: 14px !important;\n}\n\nh2 {\n  font-size: 14px;\n} // [alt=\"Reply\"],\n[alt=\"❤️\"],\n.tag .fa.fa-tag, // #reply-box,\n#Main .outdated {\n  display: none;\n}\n\n.topic_buttons {\n  margin-left: 58px;\n  padding-left: 0px;\n  padding-right: 0px;\n  #topic_thank a {\n    padding-right: 0px;\n  }\n}\n\n#Rightbar:nth-child(2) {\n  .avatar {\n    width: 22px !important;\n  }\n\n  td[width=\"48\"] {\n    width: 22px;\n  }\n}\n\n/* list */\n.item,\n#TopicsNode .cell {\n  padding: 0;\n  tr {\n    display: flex;\n    position: relative;\n    [width=\"10\"] {\n      display: none;\n    }\n\n    $aHeight=18px;\n    $aBottom=10px;\n    td:has( > [href^='/member/']) {\n      order: 5;\n      margin: auto 0 $aBottom auto !important;\n      .avatar {\n        height: $aHeight;\n        width: $aHeight !important;\n      }\n    }\n\n    td:nth-of-type(2) {\n      order: 3;\n    }\n\n    td:has( > .item_title) {\n      padding: 10px 10px 9px 0px;\n      order: 4;\n      width: calc(100% - 182px);\n      .item_title {\n        font-size: 15px;\n      }\n\n      .topic_info {\n        font-size: 0px;\n        display: flex;\n        align-items: center;\n        gap: 4px;\n        .node {\n          margin-right: 10px;\n        }\n\n        strong:nth-of-type(1) {\n          order: 9;\n          margin-left: auto;\n          font-size: 12px;\n          a {\n            font-weight: 400;\n            color: hsl(206, 100%, 40%);\n            margin: 2px;\n          }\n        }\n\n        strong:nth-of-type(1) + span {\n          order: 10;\n        }\n\n        span {\n          font-size: 12px;\n        }\n\n        .votes {\n          font-size: 13px;\n          position: absolute;\n          top: 0px;\n          left: 11px;\n          width: 80px;\n          display: flex;\n          flex-wrap: wrap;\n          justify-content: flex-end;\n          color: hsl(210, 8%, 5%) !important;\n          font-weight: 500 !important;\n          padding-top: 17 + 4px !important;\n          text-align: center;\n          font-variant-numeric: tabular-nums;\n          li {\n            order: 2;\n            position: absolute;\n            right: -27px;\n            top: 14.5px;\n            &:before {\n              content: 'votes';\n              font-family: var(--pro-text);\n            }\n          }\n        }\n      }\n    }\n\n    td[align=\"right\"] {\n      order: 1;\n      width: 60 + 40px;\n      min-width: 60px !important;\n      border: 1px solid transparent;\n      text-align: center;\n      padding-right: 1px;\n      margin-right: 10px;\n      display: flex;\n      justify-content: flex-end;\n      margin-left: 25px;\n    }\n  }\n}\n\n.count_orange,\n.count_livid {\n  color: #848d95 !important;\n  color: rgb(72, 168, 104) !important;\n  font-variant-numeric: tabular-nums;\n  background: rgba(0, 0, 0, 0) !important;\n  font-weight: 500 !important;\n  font-size: 13px;\n  line-height: 17px !important;\n  border: 1px solid rgb(72, 168, 104) !important;\n  border-radius: 3px !important;\n  margin-top: 34px;\n  padding: 2px 4px !important;\n  height: fit-content;\n  display: flex !important;\n  gap: 0.3em;\n  &::after {\n    content: 'answers';\n    font-weight: 400;\n  }\n}\n\n#TopicsNode {\n  .count_orange,\n  .count_livid {\n    margin-top: 9px;\n  }\n}\n\n/* Post */\n$postL=48px;\n#Main {\n  padding-left: 0 !important;\n  box-shadow: none !important;\n  border-radius: 0;\n  border: 1px solid #d6d9dc;\n  border-width: 0 0 0 1px; // padding-top: 24px;\n  box-sizing: border-box;\n  > .box:nth-child(2) > [class=\"cell\"] {\n    .topic_content {\n      padding-left: $postL;\n      min-height: 37px;\n    }\n  }\n}\n\n/* Post */\n.votes:has(.vote) {\n  position: absolute;\n  width: 60px;\n  left: -11px;\n  * {\n    font-family: \"Empty\" !important;\n    border: 0 !important;\n  }\n\n  [onclick^=\"upVoteTopic\"] {\n    display: block;\n    position: relative;\n    top: (74px - 7px - 30px);\n    font-size: 21px;\n    height: 37px;\n    .fa.fa-chevron-up {\n      position: relative;\n      text-align: center;\n      top: 2px;\n      &:before {\n        content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='rgb(187, 192, 196)' stroke='none'><path d='M2 26h32L18 10 2 26z'></path></svg>\") !important;\n      }\n    }\n  }\n\n  [onclick^=\"downVoteTopic\"] {\n    position: absolute;\n    top: (74 + 54 - 30) px;\n    float: left !important;\n    .fa.fa-chevron-down {\n      position: absolute;\n      &:before {\n        content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' fill='rgb(187, 192, 196)' stroke='none'><path d='M2 10h32L18 26 2 10z'></path></svg>\");\n      }\n    }\n  }\n}\n\n.fr.topic_stats {\n  float: none;\n  text-align: left;\n  display: inline;\n  font-size: 13px;\n  &:before {\n    // content: '∙';\n    // margin: 0 7px 0 3px;\n  }\n}\n\n[class=\"cell\"]:first-child:has(.fr .tag) {\n  margin-left: 82px !important;\n  padding-left: 0px;\n  padding-right: 0px;\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n  border-bottom-style: solid;\n  border-bottom-color: rgba(128, 128, 128, .25);\n}\n\n[class=\"cell\"]:first-child:has(.fr .tag):has( + div [href=\"?p=1\"]) {\n  border-bottom-width: 0px !important;\n}\n\n.box > [id^=\"r_\"]:nth-last-child(2):has( + div [href=\"?p=1\"]) {\n  border-bottom-width: 0 !important;\n}\n\n.cell:last-child,\n.cell_ops:last-child {\n  border-bottom: 1px solid rgba(128, 128, 128, .25) !important;\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\n[id^=\"r_\"] {\n  // border: 0 !important;\n  border-bottom-color: rgba(226, 226, 226, .3);\n  &::before {\n    display: block;\n    content: '';\n    width: 100%;\n    pointer-events: none;\n    position: relative; // border-top: 1px solid var(--box-border-color);\n    height: 8px;\n  }\n\n  [class=\"small fade\"] {\n    position: absolute !important;\n    width: 30px;\n    display: flex !important;\n    justify-content: flex-end;\n    float: left;\n    top: 10px;\n    color: red;\n    font-size: 15px;\n    left: -86px;\n    font-variant-numeric: tabular-nums;\n  }\n\n  $r_avt=10px;\n  $avt_just=5px;\n  .avatar {\n    position: relative;\n    top: 5px;\n    left: $avt_just; // margin-right: 3px;\n    height: $r_avt !important;\n    width: $r_avt !important;\n    filter: saturate(2);\n    border-radius: 100% !important; // padding: 2px;\n  }\n\n  .avatar {\n    top: -6px;\n    left: 29px;\n  }\n\n  td {\n    &:has( > .avatar) {\n      width: 48px;\n      position: relative;\n      top: -9px;\n      right: -17px;\n    }\n\n    &:has(.reply_content) {\n      position: relative;\n      line-height: 1;\n      > [class] {\n        font-size: 14px;\n      }\n\n      > .reply_content {\n        user-select: text;\n      }\n\n      font-size: 0;\n      user-select: none;\n      padding: 6px;\n      > .sep3,\n      > strong,\n      > span,\n      > .sep5,\n      > .reply_content {\n        display: inline;\n        position: relative;\n        bottom: -.05em;\n      }\n\n      [title=\"V2EX Moderator\"] {\n        position: relative;\n        background-color: white;\n        font-size: 7px;\n        top: -7.5px;\n      }\n\n      strong {\n        &:has([href^=\"/member/\"]) {\n          position: absolute;\n          top: -4px;\n          height: 12px;\n          left: 2px;\n        }\n\n        [href^=\"/member/\"] {\n          color: rgba(0, 119, 204, .6) !important;\n          font-weight: 500;\n          font-size: 10px;\n          margin-left: 4px;\n          padding: 1px 3px 1px 3px;\n          &:hover {\n            text-decoration: underline;\n          }\n\n          &:before {\n            // content: ' – ';\n            // color: black !important;\n          }\n        }\n      }\n    }\n  }\n\n  [href^=\"/member/\"] {\n    color: black; // font-family: SF Mono;\n    // font-family: SF Pro Text;\n    font-stretch: condensed;\n    font-feature-settings: 'cv01', 'ss02' 0, 'cv02', 'cv03', 'cv04', 'cv05', 'cv06' 0, 'cv08' 0, 'nlck', 'ital', 'ss04';\n    user-select: all;\n  }\n\n  .reply_content {\n    position: relative;\n    font-size: 14px;\n    line-height: 1.5;\n    margin: 6px 0 6px 0;\n    > [href^=\"/member/\"] {\n      color: rgba(0, 119, 204, 1) !important;\n      font-size: 12px;\n    }\n\n    a[rel ~ ='nofollow'] {\n      color: #0077cc !important;\n      text-decoration: underline;\n    }\n  }\n\n  td:has(.reply_content) strong:has([href^=\"/member/\"]) {\n    position: absolute;\n    top: -4px;\n    height: 12px;\n    left: 15px;\n    user-select: all;\n  }\n\n  [onclick^='replyOne'] {\n    position: absolute;\n    right: -32px;\n    opacity: 0.4;\n    user-select: none;\n    img {\n      opacity: 0.15;\n    }\n\n    img:hover {\n      opacity: 1;\n    }\n  }\n}\n\na[href^=\"/member/\"] {\n  font-stretch: condensed;\n  font-feature-settings: 'cv01', 'ss02' 0, 'cv02', 'cv03', 'cv04', 'cv05', 'cv06' 0, 'cv08' 0, 'nlck', 'ital', 'ss04';\n  user-select: all;\n}\n\n// #reply-box + .sep20,\n#Wrapper > .sep20:last-child {\n  display: none;\n}\n\n.sep20:has( + #reply-box) {\n  display: none;\n}\n\n#reply-box {\n  padding-left: 84px;\n  border-radius: 0;\n  border-bottom-width: 0 !important;\n  .cell.flex-one-row {\n    border-bottom-width: 0;\n    padding-bottom: 0; // margin-left: 84px; // padding-left: 0px;\n    border-radius: 0;\n    > :first-child {\n      opacity: 0.3;\n    }\n  }\n\n  .cell:has( > form) {\n    // margin-left: 24px;\n    // padding-left: calc(94px - 24px);\n  }\n\n  .cell.flex-row-end {\n    border-bottom-width: 0 !important;\n  }\n\n  ~ div {\n    padding-left: 24px;\n  }\n\n  + div + .box {\n    border: 0;\n  }\n}\n\n.badge.mod,\n.badge.op {\n  display: none;\n}\n\nstrong:has( ~ .badges .op) a {\n  background: rgb(217, 234, 247);\n  border-radius: 3px;\n}\n\nstrong:has( ~ .badges .mod):after {\n  content: 'MOD';\n  font-family: var(--compact);\n  font-weight: 800;\n  font-size: 10px;\n  padding-left: 4px;\n  color: rgba(0, 119, 204, 1) !important\n}\n\n.subtle {\n  margin-left: $postL;\n}\n\n#no-comments-yet {\n  border: 2px dashed rgba(0, 0, 0, 0.15);\n  margin-left: 24px;\n}\n\n.box {\n  > [id^=\"r_\"] {\n    padding-top: 0;\n    padding-left: 0;\n    padding-bottom: 0;\n    margin-left: 82px;\n  }\n}\n\n.no {\n  position: relative; // font-stretch: condensed;\n  font-variant-numeric: tabular-nums;\n  &:before {\n    content: '#';\n  }\n}\n\n/* profile */\n.cell_tabs ~ .cell.item {\n  .topic_info {\n    strong:nth-of-type(1) {\n      display: none;\n    }\n  }\n}\n\n.ago {\n  position: absolute !important;\n  right: -10px;\n  font-size: 10px !important;\n  height: 10px;\n  font-variant-numeric: tabular-nums;\n  top: -4px !important;\n  padding-left: 4px; // background: white;\n  letter-spacing: 0.025em;\n  font-family: 'SF Compact Rounded';\n  &:before {\n    // content: ' – ';\n    // color: black !important;\n  }\n}\n\n.thank_area {\n  position: absolute;\n  left: -184px;\n  top: 10px;\n  > a {\n    // visibility: visible;\n    // visibility: unset !important;\n  }\n}\n\n.fr .thank_area {\n  [onclick*=\"thankReply\"] {\n    visibility: hidden;\n    position: absolute;\n    top: -3px;\n    left: 152px;\n    font-size: 0;\n    &:before {\n      content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12' fill='rgba(158, 166, 173, .3)' stroke='none'><path d='M1 12h16L9 4l-8 8Z'></path></svg>\") !important;\n      visibility: visible;\n      color: rgba(158, 166, 173, .3);\n    }\n\n    &:hover:before {\n      content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12' fill='rgb(244, 130, 37)' stroke='none'><path d='M1 12h16L9 4l-8 8Z'></path></svg>\") !important;\n      visibility: visible;\n    }\n  }\n\n  [onclick*=\"ignoreReply\"] {\n    visibility: hidden;\n    &::hover {\n      visibility: visible !important;\n    }\n  }\n}\n\n.thank_area.thanked {\n  visibility: hidden;\n  position: absolute;\n  left: -32px;\n  top: 8px;\n  &:before {\n    content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12' fill='rgb(244, 130, 37)' stroke='none'><path d='M1 12h16L9 4l-8 8Z'></path></svg>\") !important;\n    visibility: visible;\n    /*   color:orange; */\n  }\n}\n}\n\n@-moz-document regexp(\".*\\\\.v2ex.com\\\\/go\\\\/.*\") {\n.count_orange,\n.count_livid {\n  margin-top: 8.5px !important;\n}\n\n.topic_info {\n  padding-top: 6px;\n  padding-bottom: 6px\n}\n}",
+    "usercssData": {
+      "name": "v2ex_",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "stylus"
+    },
+    "author": "Cascadea User",
+    "name": "v2ex_",
+    "updateDate": 1668992114154,
+    "_id": "d14f6c18-6b61-4763-9b2a-b8acaabedbd0",
+    "_rev": 1668992114155,
+    "id": 44
+  },
+  {
+    "enabled": true,
+    "installDate": 1664340632166,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           10.211.55.3 store dev \n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"10.211.55.3\") {\n.codeimg {\n\tposition: fixed;\n\t/* \t\twidth: 1000px; */\n\theight: 220px !important;\n\ttop: 0;\n\tleft: 0;\n}\n/* Insert code here... */\n.header-logo {\n\tdisplay: none !important;\n}\n.header-wrap {\n\tpadding-top: 0;\n}\n.header-nav-wrap {\n\tmargin-top: 0;\n}\n.fixed-header {\n/* \tposition: sticky !important; */\n}\n[role=\"menubar\"] {\n\tmargin-left: 4px;\n}\n\n}",
+    "usercssData": {
+      "name": "10.211.55.3 store dev",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "10.211.55.3 store dev",
+    "updateDate": 1666919441659,
+    "_id": "f83aa6dc-e75e-43cf-868e-ab6cfadcc872",
+    "_rev": 1666919441659,
+    "id": 45
+  },
+  {
+    "enabled": true,
+    "installDate": 1650202431113,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           vuejs.org\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"vuejs.org\") {\n\n#vt-top,\n.wwads-container {\n\tdisplay: none;\n}\n.nav-bar {\n\tmargin-top: 0 !important;\n}\n.has-top-banner {\n\t--vt-banner-height: var(--vt-nav-height);\n}\n#vs,\n#logo,\n.logo,\n[alt=\"vue logo\"] {\n\tvisibility: hidden\n}\nbody.docs #header {\n\tposition: absolute;\n}\n.banner {\n\theight: 0 !important;\n}\n.VPNav {\n\ttop: 0 !important;\n}\n\nhtml:not(.banner-dismissed) {\n\t--vt-banner-height: 0px;\n}\n\n#vs-top,\n.banner-vuejsconf,\n.vuejobs-wrapper,\n.become-backer,\n.sponsor-container,\n.VPCarbonAds,\n.vuejobs-container {\n\tdisplay: none !important;\n}\n\n.main-container.has-top-banner .nav-bar {\n\tmargin-top: 0;\n}\n\n#VPSidebarNav:has(.preference-switch) {\n\tpadding-top: 0px !important;\n}\n.preference-switch {\n\tposition: sticky;\n\ttop: 0 !important;\n}\n/* .VPNav {\n\tposition: relative !important;\n} */\n\n}\n\n@-moz-document domain(\"v2.vuejs.org\") {\n/* Insert code here... */\n#vs {\n\tdisplay: none;\n}\n\n@media (min-width: 900px) {\nbody.has-vs-banner.docs {\n\tpadding-top: calc(144px - 80px);\n}\n\n\n\n\n\n\n}\n\nbody.has-vs-banner.docs #header,\nbody.has-vs-banner .sidebar {\n\ttop: 0 !important;\n}\n\n\n\n\n\n\n\n}",
+    "usercssData": {
+      "name": "vuejs.org",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "vuejs.org",
+    "updateDate": 1667787728739,
+    "_id": "6e9e6dfd-591b-491c-9998-97543042a001",
+    "_rev": 1667787728739,
+    "id": 46
+  },
+  {
+    "enabled": true,
+    "installDate": 1665373075954,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "customName": "code-highlight",
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tcode_highlight\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document regexp('(https?|chrome-extension):\\\\/\\\\/(?!(localhost|172.16.1.213|136.96.63.25|127.0.0.1|172.16.1._230)).*') {\n// for the code\n.cm-keyword,\n.cm-string,\n.kwd,\n.str,\n.language-jsx code .k,\n.language-jsx code .kd,\n.hljs-variable.language_,\n.hljs-title.class_,\n.hljs-string,\n.hl-string.hl-single,\n.hl-string.hl-double,\n.hl-string .hl-string,\n.token.keyword,\n.xml .hljs-tag .hljs-name,\n.hljs-selector-tag,\ncode:not(.hljs.bash) .hljs-keyword {\n  -webkit-font-smoothing: initial !important;\n  font-weight: 900;\n}\n\n// div:not(.language-bash) .token.function,\n.language-javascript .token.function,\npre.js .token.function,\n.hl-function,\n.hljs-title.function_ {\n  font-style: italic;\n}\n\n.hljs-built_in {\n  -webkit-font-smoothing: initial !important;\n  font-style: italic;\n  font-weight: 900;\n}\n}",
+    "usercssData": {
+      "name": "code_highlight",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "code_highlight",
+    "updateDate": 1670040616568,
+    "_id": "8f487d07-65ce-4ee0-aeb8-6ce6424c501b",
+    "_rev": 1670040616568,
+    "id": 47
+  },
+  {
+    "enabled": true,
+    "installDate": 1606144779669,
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tglobal\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document regexp('(https?|chrome-extension):\\\\/\\\\/(?!(localhost|172.16.1.213|136.96.63.25|127.0.0.1|172.16.1._230)).*') {\nhtml {\n  // -webkit-font-smoothing: subpixel-antialiased !important;\n  -webkit-font-smoothing: antialiased; //!important;\n  // -moz-osx-font-smoothing: grayscale !important;\n  //-moz-font-feature-settings: \"smcp\";\n  // -webkit-font-feature-settings: \"tnum\"  !important;\n  /*  'cv01' 96, 'ss01' 1, 'ss02' 4, 'cv02', 'cv03' :J, 'cv04', 'cv05' I, 'cv06' l, 'ss07' a, 'cv07' , 'cv08' 0 zh, 'nlck', 'nalt' 0, 'ital',  'ss03' 0, 'ss04' 1, */\n  font-feature-settings: 'cv01' 0, 'ss02' 0, 'cv02', 'cv03', 'cv04', 'cv05', 'cv06' 0, 'cv08' 0, 'nlck', 'ital', 'ss04';\n}\n\n// \"rlig\" 1,\"calt\" 1,\"ss01\" 1,\"ss06\" 1\n/*  'cv01',  'Straight-sided nine'; 6 9. [six six.tnum] by [six.1 six.1.tnum];*/\n/*  'ss01',  sub [six nine six.tnum nine.tnum] by [six.1 nine.1 six.1.tnum nine.1.tnum]; */\n/*  'ss02', !! 'Open four'; 4 !! ^^^ some website show Mojibake */\n/*  'cv02',  'Open four'; 4  */\n/*  'cv03',  'Vertically centered colon'; : and J*/\n/*  'cv05',  'Seriffed Capital I';*/\n/*  'cv06',  'Tailed lowercase l';*/\n/*  'ss07',  'One storey a';*/\n/*  'cv07',*/\n/*  'cv08',  'Slashed zero'; 0 and Chinese*/\n/*  'trad',*/\n/*  'nlck',*/\n/*  'nalt',*/\n/*  'ital',*/\n/*  'tnum',*/\n/*  'ss03',  -- Mono 'Alternate 0 no slash';*/\n/*  'ss04';  $ 'Alternate 1 no serif';;*/\n.code-example,\n.code_cell,\ncode,\n.code *,\n// code *,\n.codeblock,\n.execution-count,\n.execution-count *,\nkbd,\npre,\npre code,\ntt,\n// [class ~ =\"code\"],\n[style*=\"monospace\"],\n[style*=\"Monospace\"],\n.monospaced {\n  -webkit-font-smoothing: antialiased;\n  font-family: ui-monospace, 'SF Mono', Monospace !important;\n  letter-spacing: 0 !important;\n  font-feature-settings: \"ss03\"0, // \"Alternate 0 no slash\";\n  \"ss04\"; // \"Alternate 1 no serif\";;\n}\n\n// [class$=\"code\"],\n[class|=\"CodeMirror\"] {\n  -webkit-font-smoothing: antialiased;\n  font-family: ui-monospace, 'SF Mono', Monospace;\n  letter-spacing: 0 !important;\n  font-feature-settings: \"ss03\"0, // \"Alternate 0 no slash\";\n  \"ss04\"; // \"Alternate 1 no serif\";;\n}\n\n[data-linenumber],\n.CodeMirror-linenumber,\n.cm-gutter.cm-lineNumbers,\n.line-number-style,\n.file-line-num,\n.line:before,\n.line-num,\n.line-no,\n  .linenos pre,\n.gutter .line,\n// .gutter *,\n.CodeMirror-linenumber,\n.editor-container .margin-view-overlays,\n.gist .blob-num,\n.line-number,\n.line-numbers-rows *,\n.lineno,\n.monaco-editor .margin-view-overlays,\n.pre-numbering * {\n  font-family: XcodeDigits !important;\n}\n\nli::marker {\n  font-family: XcodeDigits !important;\n}\n\nbody > pre:first-child {\n  font-size: 13px;\n}\n\n.mediawiki {\n  font-family: -apple-system, SF Pro Text;\n}\n\n[style*=\"sans-serif\"] {\n  font-family: -apple-system, SF Compact Text;\n}\n\n.grid-date,\n[class^=\"time\"],\n[class$=\"time\"],\n[id^=\"timer\"] {\n  font-variant-numeric: tabular-nums !important;\n}\n\n// ad || cokkies\n.onesignal-slidedown-container.onesignal-reset,\n// .modal-content,\n[class*='cookie-banner'] [class$=\"-consent-banner\"],\n[aria-label=\"cookieconsent\"],\n[data-banner=\"cookies\"],\n[data-before-content*=\"advertisement\"],\n[class$=\"cookie-consent-container\"],\n[data-testid=\"cookie-notice\"],\n[data-token*=\"gdpr_cookie\"],\n[data-ut=\"search-signup-prompt\"],\n[src=\"./files/images/listicon.gif\"],\n[id*=\"-ad-\"],\n[id*=\"_ads_\"],\n[id$=\"Ad\"],\n[aria-label=\"Advertisement\"],\n[aria-label=\"advertisement\"],\n.pBKjV, // outlook.com email\n[id|=\"ad\"],\n[id*=\"AdBillboard\"],\n[id*=\"advertisement\"],\n[id|=\"ccpa\"],\n[id*=\"cookie\"],\n[id*=\"cookieWrapper\"],\n[rel$='sponsored'],\n#_evidon_banner,\n#ad,\n#carbonads,\n#ccpa-banner,\n#ccpaCookieBanner,\n#js-gdpr-consent-banner,\n#onetrust-banner-sdk,\n#onetrust-consent-sdk *,\n#Paywall.Paywall,\n#shareWeibo,\n#shareWeixin,\n#truste-consent-track,\n#u_0_d,\n[class*=\"advertisement-\"],\n// [class|=\"cookie\"],\n.banner-cookies,\n[class|=\"cookiesWarning\"],\n.ad-image,\n.advertisement-box,\n.ads-active,\n.adsbygoogle,\n.AdWrapper,\n.banner-fixed-bottom.cms-html-edit,\n.bottomlink,\n.carbon-ads,\n.cc_banner-wrapper,\n.cc-bottom,\n.ckcontent,\n.cookie-banner,\n.cookie-consent,\n.cookie-consent-popup,\n.cookieinfo,\n.cookieinfo__heading,\n.cookiesdiv,\n.cookiesinfo,\n.cookiesinfo__heading,\n.expandable-growler-wrapper,\n.gdpr-cookie,\n.js-consent-banner,\n.js-cookie-consent,\n.js-report-ad-button-container,\n.mu_cookie,\n.oaDryNmq,\n.privacyPolicyPopup,\n.paywall-container-component,\n.paywall-popup {\n  display: none !important;\n}\n\n:host {\n  display: block !important;\n  position: relative !important;\n  width: 0 !important;\n  height: 0 !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  z-index: 2147483647 !important;\n}\n\n:host ::after,\n:host ::before {\n  display: none !important;\n}\n\n.__whatfont_elem.__whatfont_panel.__whatfont_basic * {\n  font-family: \"SF Pro Text\" !important;\n  letter-spacing: .25px;\n}\n}",
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "usercssData": {
+      "name": "global",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "global",
+    "updateDate": 1670208632934,
+    "_id": "cb62c860-1e7c-4b29-8341-22f1988f3671",
+    "_rev": 1670208632934,
+    "customName": "-global",
+    "id": 48
+  },
+  {
+    "enabled": true,
+    "installDate": 1665997975129,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "customName": "v2ex-Filter",
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\tv2ex_Filter\n@author\t\t\tCascadea User\n@version\t\t1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document domain(\"v2ex.com\") {\n.cell.item:has(.topic_info [href=\"/go/java\"]),\n.cell.item:has(.topic_info [href=\"/go/go\"]),\n.cell.item:has(.topic_info [href=\"/go/cpp\"]) {\n  opacity: 0.2;\n}\n}\n\n@-moz-document domain(\"v2ex.com\") {\n@watch: xuegy;\n@pink: pcbl,\n'dguge',\n'play78',\n'xingda920813',\n'kumiko',\n'giganet',\n'jamosLi',\n'66beta',\n  'TheBloomOfYouth',\n'Telegram',\n'pyre',\n'angelo3344',\n'wbrobot',\n'lavenderkissyou',\n'changyou',\n'FreMaNgo',\n'luoshengdu',\n'dxgfalcongbit',\n'learningman',\n'itskingname',\n'silentt',\n'Level6',\n'jdgui',\n'sagaxu',\n'rainman777',\n'chonger',\n'Cielsky',\n'leibuting',\n'kikyous',\n'zdnet',\n'jobtesting',\n'askfilm',\n'Mithril',\n'ynyounuo',\n'Ayahuasec',\n'Cu635',\n'zx900930',\n'yazinnnn',\n'fxxkgw',\n'gateoflunar',\n'killerv',\n'Devin',\n'Jasmine2016',\n'Huelse',\n'xuanbg',\n'oasis2008f',\n'AX5N',\n'ccyu220',\n'yjim',\n'tankren',\n\"yhan\",\n\"sunrise1996\",\n\"z761031\",\n'calpes',\n'ruimz',\n'chinvo',\n'exploreexe',\n'xiaoyuesanshui',\n'popzuk',\n'lovedebug',\n'semglassiebaba',\n'fackVL',\n'mon6912640',\n'CrazyMonkeyV',\n'Mac',\n'buyan3303';\n@dumb: loryyang,\n'natsume';\n@phobias: frankzeng,\n'lzmbbg',\nRaynard,\n'yuzhibopro',\n'vietor',\n'onec',\n'ily433664',\n'deicol';\n@justBlock: tozp,\n'jangit',\n'gBurnX',\n'myevery',\n'whypool',\n'abelmakihara',\n'cigarzh',\n'maxshow099';\n@die: 'kumiko';\n@race: 'ggmood';\n@fanzei: HugoChao,\n'knightdf',\n'motherfaka',\n  'dc3365',\n'DeactivatedOcean',\n'hanqian',\n'312ybj22';\n@watchList: nikolai,\n'123jiayue',\n'xloger',\n'Jirajine',\n'v2isgood',\n'v2esand',\n'KillPaul',\n'xtli12',\n'Caan07',\n'panamera',\n'ztyMCR',\n'caroline1022',\n'edwardaa',\n'ryougifujino',\n'dji38838c';\n.loop-highlight(@fanzei);\n.loop-highlight(@watchList);\n.loop-highlight(@list) {\n  each(@list, {\n    [id^=\"r_\"]:has(strong [href=\"/member/@{value}\"]) {\n      &:extend(.highlight-mark);\n    }\n  }\n\n  )\n}\n\n.highlight-mark {\n  background-color: rgb(253 247 227 / 99%) !important;\n}\n\n.loop-block(@pink);\n.loop-block(@race);\n.loop-block(@dumb);\n.loop-block(@phobias);\n.loop-block(@justBlock);\n.loop-block(@die);\n.loop-block(@list) {\n  each(@list, {\n    [id^=\"r_\"]:has(strong [href=\"/member/@{value}\"]) {\n      &:extend(.pink-mark);\n    }\n  }\n\n  )\n}\n\n.pink-mark {\n  background-color: rgba(200, 146, 146, 0.6) !important;\n  opacity: 0.4;\n}\n\n@blockHome: Casbin;\n.block-homepage(@blockHome);\n.block-homepage(@list) {\n  each(@list, {\n    #Tabs ~ .cell.item:has(strong [href=\"/member/@{value}\"]) {\n      &:extend(.hidden);\n    }\n  }\n\n  )\n}\n\n.hidden {\n  display: none;\n}\n}",
+    "usercssData": {
+      "name": "v2ex_Filter",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "v2ex_Filter",
+    "updateDate": 1669693138177,
+    "_id": "27365839-a6c4-49c0-afd0-c25651bdc03c",
+    "_rev": 1669693138177,
+    "id": 49
+  },
+  {
+    "enabled": true,
+    "installDate": 1667184917600,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           10/31/2022, 10:54:55 AM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"developer.mozilla.org\") {\n.main-document-header-container {\n\tposition: static;\n}\n}",
+    "usercssData": {
+      "name": "10/31/2022, 10:54:55 AM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "10/31/2022, 10:54:55 AM",
+    "updateDate": 1667202762369,
+    "_id": "98b8fee4-4e68-4a9e-9fa8-395fa66e023c",
+    "_rev": 1667202762369,
+    "customName": "mdn",
+    "id": 52
+  },
+  {
+    "enabled": true,
+    "installDate": 1667195490068,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           10/31/2022, 1:51:16 PM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@preprocessor\t  less\n@author         Me\n==/UserStyle== */\n@-moz-document regexp(\"^https:\\\\/\\\\/github\\\\.com\\\\/.+\\\\/.+\\\\/commit\\\\/.*\") {\n/* Insert code here... */\nhtml[data-with-gitako-spacing=true] body {\n\t--gitako-width: 0;\n\tmargin-left: 0 !important;\n}\n\n#gitako-root {\n\tdisplay: none;\n}\n}\n\n@-moz-document domain(\"github.com\") {\n.node-item-label span {\n\tfont-family: 'SF Compact Text';\n\tletter-spacing: -0.025rem !important;\n}\n\n/* plugin */\n.ghh-theme-github .ghh {\n\tpadding-bottom: 0\n}\n\n.ghh-readme {\n\tmargin-top: 0;\n\tmargin-bottom: 0;\n\t:first-child {\n\t\tpadding-top: 10px\n\t}\n\n\t:last-child {\n\t\tpadding-bottom: 10px\n\t}\n}\n\n.ghh-markdown-separator {\n\tmargin-bottom: 0 !important\n}\n\n.octotree-sidebar.octotree-github-sidebar {\n\t.octotree-views .octotree-view.octotree-tree-view .octotree-view-header {\n\t\t.octotree-header-repo {\n\t\t\ta,\n\t\t\ta:hover {\n\t\t\t\tcolor: blue !important;\n\t\t\t}\n\t\t}\n\n\t\t.octotree-header-branch .octotree-icon-branch::before,\n\t\t.octotree-header-repo .octotree-icon-repo::before {\n\t\t\tcolor: blue;\n\t\t}\n\t}\n\n\t.octotree-bookmark-toggle i::before {\n\t\tcolor: blue;\n\t}\n}\n\n.octotree-tree-actions-icons *:before,\nhtml.octotree-pinned .octotree-sidebar.octotree-github-sidebar a.octotree-pin .octotree-icon-pin::before,\na.octotree-settings .octotree-icon-settings::before,\n.octotree-header-summary * {\n\tcolor: blue !important;\n}\n\n.octotree-view-header {\n\tbackground: white !important;\n\tborder-bottom: 1px solid rgb(208, 215, 222);\n\tborder-right: 1px solid rgb(208, 215, 222) !important;\n}\n}",
+    "usercssData": {
+      "name": "10/31/2022, 1:51:16 PM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "preprocessor": "less",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "10/31/2022, 1:51:16 PM",
+    "updateDate": 1667909550387,
+    "_id": "f3ba8967-8c92-4af6-a396-91a81b899079",
+    "_rev": 1667909550387,
+    "customName": "Github Plugin",
+    "id": 53
+  },
+  {
+    "enabled": true,
+    "installDate": 1667309707581,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           netflix.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"netflix.com\") {\n.lln-whole-title-translation-wrap {\n  opacity: 0.6 !important;\n}\n}",
+    "usercssData": {
+      "name": "netflix.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "netflix.com",
+    "updateDate": 1669949487320,
+    "_id": "cb9a344b-c15a-4281-a14a-79f04b0012b7",
+    "_rev": 1669949487320,
+    "id": 54,
+    "customName": "NETFLIX"
+  },
+  {
+    "enabled": true,
+    "installDate": 1667394822068,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name\t\t\t    stackexchange\n@author\t\t\t  Cascadea User\n@version\t\t  1.0.0\n@namespace\t\tcascadea41492846\n@preprocessor\tless\n==/UserStyle== */\n@-moz-document domain(\"stackexchange.com\"),\ndomain(\"stackoverflow.com\"),\ndomain(\"superuser.com\"),\ndomain(\"serverfault.com\") {\n.s-topbar,\n.top-bar {\n  position: absolute !important;\n}\n\n.js-vote-count,\n.comment-score {\n  font-variant-numeric: tabular-nums;\n}\n\n#left-sidebar {\n  [class=\"grid ai-center jc-space-between ml8 mt24 mb4\"],\n  [class=\"grid ai-center jc-space-between ml8 mt24 mb4\"] + li {\n    display: none !important;\n  }\n}\n\n[alt=\"user avatar\"],\n#hireme {\n  opacity: 0.3;\n}\n\n.js-toast.js-stacks-managed-popup,\n/* help us improve */\n.site-header--sponsored,\n.site-header--sponsored + a,\n.clc-cp-link,\n.js-freemium-cta.ps-relative,\n.js-consent-banner {\n  display: none;\n}\n\n.show-votes .sidebar-linked .spacer > a:first-child .answer-votes.answered-accepted,\n.show-votes .sidebar-related .spacer > a:first-child .answer-votes.answered-accepted {\n  background-color: var(--green-300);\n}\n\nh1,\nh2,\nh3 {\n  font-family: 'SF Pro Text',\n  -apple-system !important;\n  * {\n    font-family: 'SF Pro Text',\n    -apple-system !important;\n  }\n}\n\n.comment-copy,\np {\n  // font-family: \"SF Pro Text\" !important;\n  letter-spacing: .15px !important;\n}\n\n.profile-communities--rep-badges .badge3:before {\n  content: \"\\25cf\";\n  position: relative;\n  top: -5.5px;\n  font-size: .7rem;\n}\n}",
+    "usercssData": {
+      "name": "stackexchange",
+      "author": "Cascadea User",
+      "version": "1.0.0",
+      "namespace": "cascadea41492846",
+      "preprocessor": "less"
+    },
+    "author": "Cascadea User",
+    "name": "stackexchange",
+    "updateDate": 1667394841897,
+    "_id": "a3069150-93d2-4da4-90d3-f191f8838845",
+    "_rev": 1667394841897,
+    "id": 55,
+    "customName": "StackExchange"
+  },
+  {
+    "enabled": true,
+    "installDate": 1667649953600,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           disneyplus.com - 11/5/2022, 8:05:41 PM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"disneyplus.com\") {\n.dss-subtitle-renderer-cue-positioning-box {\n  top: 50% !important;\n}\n}",
+    "usercssData": {
+      "name": "disneyplus.com - 11/5/2022, 8:05:41 PM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "disneyplus.com - 11/5/2022, 8:05:41 PM",
+    "updateDate": 1667649961305,
+    "_id": "c85ef624-cf89-4470-8b36-25d54dea32dd",
+    "_rev": 1667649961305,
+    "id": 56
+  },
+  {
+    "enabled": true,
+    "installDate": 1667739186134,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           blog.csdn.net - 11/6/2022, 8:52:56 PM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"blog.csdn.net\") {\n.passport-login-container {\n  display: none;\n}\n}",
+    "usercssData": {
+      "name": "blog.csdn.net - 11/6/2022, 8:52:56 PM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "blog.csdn.net - 11/6/2022, 8:52:56 PM",
+    "updateDate": 1667739190864,
+    "_id": "36486fc9-d6b1-4f36-9dea-60ccb41bdf19",
+    "_rev": 1667739190864,
+    "id": 57
+  },
+  {
+    "enabled": true,
+    "installDate": 1668581101078,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           11/16/2022, 2:44:29 PM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"angular.io\") {\n/* Insert code here... */\nimg.ng-star-inserted {\n  /*   opacity: 0.1; */\n}\n\n[src=\"assets/images/logos/angular/logo-nav@2x.png\"] {\n/*   opacity: 0.1; */\n}\n\na.nav-link.home *{\n  opacity: 0.1;\n}\n}",
+    "usercssData": {
+      "name": "11/16/2022, 2:44:29 PM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "11/16/2022, 2:44:29 PM",
+    "updateDate": 1668584462888,
+    "_id": "1f2e3faf-9cef-4266-b8db-919f01e8cc53",
+    "_rev": 1668584462888,
+    "id": 59
+  },
+  {
+    "enabled": true,
+    "installDate": 1669616267716,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           11/28/2022, 2:17:13 PM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n@preprocessor\t  less\n==/UserStyle== */\n@-moz-document domain(\"genius.com\") {\n/* Insert code here... */\n.LeaderboardOrMarquee__Sticky-yjd3i4-0,\n#primis-reparent-container,\n#primisPlayerContainerDiv {\n  display: none !important;\n}\n}",
+    "usercssData": {
+      "name": "11/28/2022, 2:17:13 PM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me",
+      "preprocessor": "less"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "11/28/2022, 2:17:13 PM",
+    "updateDate": 1669616475881,
+    "_id": "5c7f2b62-b8ea-4733-ad8b-ae978827c40f",
+    "_rev": 1669616475881,
+    "customName": "genius.com",
+    "id": 60
+  },
+  {
+    "enabled": true,
+    "installDate": 1670258377141,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           typescriptlang.org - 12/6/2022, 12:39:23 AM\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n@-moz-document domain(\"typescriptlang.org\") {\n/* Insert code here... */\nhtml {\n  --code-font: \"Cascadia Mono-SemiLight\", Menlo, Monaco, Consolas, monospace;\n  --body-font: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, \"Helvetica Neue\", sans-serif;\n}\n}",
+    "usercssData": {
+      "name": "typescriptlang.org - 12/6/2022, 12:39:23 AM",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "typescriptlang.org - 12/6/2022, 12:39:23 AM",
+    "updateDate": 1670258391706,
+    "_id": "9c5580bb-cbeb-47ca-b5bc-ad92711b9e5d",
+    "_rev": 1670258391706,
+    "id": 61
+  }
+]
